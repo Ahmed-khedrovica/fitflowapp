@@ -7,9 +7,11 @@ class OnboardingGoalCard extends StatelessWidget {
   const OnboardingGoalCard({
     super.key,
     required this.goal,
+    required this.isSelected,
   });
 
   final OnboardingGoal goal;
+  final bool isSelected;
 
   @override
   Widget build(BuildContext context) {
@@ -19,8 +21,8 @@ class OnboardingGoalCard extends StatelessWidget {
         color: AppColors.surface,
         borderRadius: BorderRadius.circular(12),
         border: Border.all(
-          color: goal.isSelected ? AppColors.primary : const Color(0xFFE2E8F0),
-          width: goal.isSelected ? 1.5 : 1,
+          color: isSelected ? AppColors.primary : const Color(0xFFE2E8F0),
+          width: isSelected ? 1.5 : 1,
         ),
       ),
       child: Row(
@@ -46,9 +48,9 @@ class OnboardingGoalCard extends StatelessWidget {
             ),
           ),
           Icon(
-            goal.isSelected ? Icons.radio_button_checked : Icons.radio_button_off,
+            isSelected ? Icons.radio_button_checked : Icons.radio_button_off,
             size: 20,
-            color: goal.isSelected ? AppColors.primary : AppColors.textMuted,
+            color: isSelected ? AppColors.primary : AppColors.textMuted,
           ),
         ],
       ),
