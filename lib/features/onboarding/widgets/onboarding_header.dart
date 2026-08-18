@@ -1,5 +1,6 @@
 import 'package:fitflowapp/core/theme/app_colors.dart';
 import 'package:fitflowapp/core/theme/app_styles.dart';
+import 'package:fitflowapp/features/onboarding/widgets/language_dropdown.dart';
 import 'package:flutter/material.dart';
 
 class OnboardingHeader extends StatelessWidget {
@@ -14,18 +15,7 @@ class OnboardingHeader extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Text('FitFlow', style: AppStyles.onboardingBrand),
-          Container(
-            decoration: BoxDecoration(
-              color: AppColors.surface,
-              shape: BoxShape.circle,
-              border: Border.all(color: const Color(0xFFE2E8F0)),
-            ),
-            child: const Icon(
-              Icons.person_outline,
-              size: 22,
-              color: AppColors.textSecondary,
-            ),
-          ),
+          const LanguageDropdown(),
         ],
       ),
     );
