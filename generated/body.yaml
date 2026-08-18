@@ -1,0 +1,199 @@
+screen:
+  name: Body
+  children:
+  - type: column
+    id: 1:766
+    x: -441.6549987792969
+    y: 157.0
+    spacing: 24.0
+    background: '#000000'
+    width: 243.30999755859375
+    height: 228.0
+    children:
+    - type: row
+      id: 1:767
+      x: -384.0
+      y: 157.0
+      alignment: center
+      background: '#000000'
+      width: 128.0
+      height: 128.0
+      children:
+      - type: column
+        id: 1:768
+        x: -380.0
+        y: 161.0
+        alignment: center
+        background: '#000000'
+        width: 120.0
+        height: 120.0
+        children:
+        - type: stack
+          id: 1:769
+          x: -380.0
+          y: 161.0
+          background: '#000000'
+          width: 120.0
+          height: 120.0
+          children:
+          - type: icon
+            name: Vector
+            id: 1:770
+            url: assets/icons/vector_1_770.svg
+            width: 84.00000762939453
+            height: 48.000003814697266
+          - type: icon
+            name: Vector
+            id: 1:771
+            url: assets/icons/vector_1_771.svg
+            width: 66.00000762939453
+            height: 84.00000762939453
+          - type: icon
+            name: Vector
+            id: 1:772
+            url: assets/icons/vector_1_772.svg
+            width: 24.000003814697266
+    - type: column
+      id: 1:773
+      x: -441.6549987792969
+      y: 309.0
+      spacing: 8.0
+      background: '#000000'
+      width: 243.30999755859375
+      height: 76.0
+      children:
+      - type: column
+        id: 1:774
+        x: -441.6549987792969
+        y: 309.0
+        background: '#000000'
+        width: 243.30999755859375
+        height: 48.0
+        children:
+        - type: text
+          value: FitFlow
+          id: 1:775
+          x: -404.6499938964844
+          y: 309.0
+          size: 48.0
+          fontWeight: 700
+          fontFamily: Lexend
+          color: '#FFFFFF'
+          align: center
+      - type: column
+        id: 1:776
+        x: -441.6549987792969
+        y: 365.0
+        background: '#000000'
+        width: 243.30999755859375
+        height: 20.0
+        children:
+        - type: text
+          value: Elevate Your Movement
+          id: 1:777
+          x: -441.6549987792969
+          y: 365.0
+          size: 14.0
+          fontWeight: 300
+          fontFamily: Lexend
+          color: '#FFFFFF'
+          align: center
+  - type: container
+    width: 128.0
+    height: 6.0
+    background: '#FFFFFF'
+    radius: 9999.0
+    id: 1:791
+    x: -384.0
+    y: 699.0
+  - type: row
+    id: 1:792
+    x: -515.0
+    y: -171.0
+    padding: 26.666666666666668
+    spacing: 239.91000366210938
+    background: '#000000'
+    width: 390.0
+    height: 48.0
+    children:
+    - type: column
+      id: 1:793
+      x: -483.0
+      y: -149.0
+      background: '#000000'
+      width: 28.09000015258789
+      height: 20.0
+      children:
+      - type: text
+        value: '9:41'
+        id: 1:794
+        x: -483.0
+        y: -149.0
+        size: 14.0
+        fontWeight: 600
+        fontFamily: Lexend
+        color: '#FFFFFF'
+        align: left
+    - type: row
+      id: 1:795
+      x: -215.0
+      y: -148.0
+      spacing: 6.0
+      background: '#000000'
+      width: 58.0
+      height: 18.0
+      children:
+      - type: column
+        id: 1:796
+        x: -215.0
+        y: -146.0
+        background: '#000000'
+        width: 14.0
+        height: 14.0
+        children:
+        - type: text
+          value: signal_cellular_alt
+          id: 1:797
+          x: -215.0
+          y: -146.0
+          size: 14.0
+          fontWeight: 400
+          fontFamily: Material Icons
+          color: '#FFFFFF'
+          align: left
+      - type: column
+        id: 1:798
+        x: -195.0
+        y: -146.0
+        background: '#000000'
+        width: 14.0
+        height: 14.0
+        children:
+        - type: text
+          value: wifi
+          id: 1:799
+          x: -195.0
+          y: -146.0
+          size: 14.0
+          fontWeight: 400
+          fontFamily: Material Icons
+          color: '#FFFFFF'
+          align: left
+      - type: column
+        id: 1:800
+        x: -175.0
+        y: -148.0
+        background: '#000000'
+        width: 18.0
+        height: 18.0
+        children:
+        - type: text
+          value: battery_full
+          id: 1:801
+          x: -175.0
+          y: -148.0
+          size: 18.0
+          fontWeight: 400
+          fontFamily: Material Icons
+          color: '#FFFFFF'
+          align: left

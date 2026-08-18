@@ -1,0 +1,789 @@
+screen:
+  name: Profile & Settings
+  children:
+  - type: row
+    id: 280:141
+    x: 2045.0
+    y: 811.2000122070312
+    padding: 31.113333384195965
+    spacing: 53.29999923706055
+    background: '#FFFFFF'
+    width: 390.0
+    height: 57.79999923706055
+    children:
+    - type: column
+      id: 280:142
+      x: 2087.639892578125
+      y: 821.1000366210938
+      padding: 4.0
+      alignment: center
+      background: '#000000'
+      width: 47.90999984741211
+      height: 47.0
+      children:
+      - type: icon
+        name: Container
+        id: 280:143
+        url: assets/icons/container.svg
+        width: 18.0
+        height: 18.0
+      - type: column
+        id: 280:145
+        x: 2087.639892578125
+        y: 843.1000366210938
+        padding: 4.0
+        background: '#000000'
+        width: 47.90999984741211
+        height: 21.0
+        children:
+        - type: text
+          value: Summary
+          id: 280:146
+          x: 2087.639892578125
+          y: 847.1000366210938
+          size: 11.0
+          fontWeight: 500
+          fontFamily: Plus Jakarta Sans
+          color: '#94A3B8'
+          align: left
+    - type: column
+      id: 280:147
+      x: 2188.85009765625
+      y: 820.2000122070312
+      padding: 4.0
+      alignment: center
+      background: '#000000'
+      width: 37.47999954223633
+      height: 48.79999923706055
+      children:
+      - type: icon
+        name: Container
+        id: 280:148
+        url: assets/icons/container.svg
+        width: 19.799999237060547
+        height: 19.799999237060547
+      - type: column
+        id: 280:150
+        x: 2188.85009765625
+        y: 844.0
+        padding: 4.0
+        background: '#000000'
+        width: 37.47999954223633
+        height: 21.0
+        children:
+        - type: text
+          value: Activity
+          id: 280:151
+          x: 2188.85009765625
+          y: 848.0
+          size: 11.0
+          fontWeight: 500
+          fontFamily: Plus Jakarta Sans
+          color: '#94A3B8'
+          align: left
+    - type: column
+      id: 280:152
+      x: 2279.6298828125
+      y: 822.1000366210938
+      padding: 4.0
+      alignment: center
+      background: '#000000'
+      width: 27.1299991607666
+      height: 45.0
+      children:
+      - type: icon
+        name: Container
+        id: 280:153
+        url: assets/icons/container.svg
+        width: 20.0
+        height: 16.0
+      - type: column
+        id: 280:155
+        x: 2279.6298828125
+        y: 842.1000366210938
+        padding: 4.0
+        background: '#000000'
+        width: 27.1299991607666
+        height: 21.0
+        children:
+        - type: text
+          value: Vitals
+          id: 280:156
+          x: 2279.6298828125
+          y: 846.1000366210938
+          size: 11.0
+          fontWeight: 500
+          fontFamily: Plus Jakarta Sans
+          color: '#94A3B8'
+          align: left
+    - type: column
+      id: 280:157
+      x: 2360.06005859375
+      y: 822.1000366210938
+      padding: 4.0
+      alignment: center
+      background: '#000000'
+      width: 32.25
+      height: 45.0
+      children:
+      - type: icon
+        name: Container
+        id: 280:158
+        url: assets/icons/container.svg
+        width: 16.0
+        height: 16.0
+      - type: column
+        id: 280:160
+        x: 2360.06005859375
+        y: 842.1000366210938
+        padding: 4.0
+        background: '#000000'
+        width: 32.25
+        height: 21.0
+        children:
+        - type: text
+          value: Profile
+          id: 280:161
+          x: 2360.06005859375
+          y: 846.1000366210938
+          size: 11.0
+          fontWeight: 500
+          fontFamily: Plus Jakarta Sans
+          color: '#2563EB'
+          align: left
+  - type: column
+    id: 280:162
+    x: 2045.0
+    y: -171.0
+    background: '#FFFFFF'
+    width: 390.0
+    height: 65.0
+    children:
+    - type: row
+      id: 280:163
+      x: 2045.0
+      y: -171.0
+      padding: 16.0
+      spacing: 148.83999633789062
+      background: '#000000'
+      width: 390.0
+      height: 64.0
+      children:
+      - type: row
+        id: 280:164
+        x: 2065.0
+        y: -155.0
+        spacing: 12.0
+        background: '#000000'
+        width: 161.16000366210938
+        height: 32.0
+        children:
+        - type: icon
+          name: Background
+          id: 280:165
+          url: assets/icons/background.svg
+          width: 32.0
+          height: 32.0
+        - type: column
+          id: 280:167
+          x: 2109.0
+          y: -151.0
+          background: '#000000'
+          width: 117.16000366210938
+          height: 24.0
+          children:
+          - type: text
+            value: Health Profile
+            id: 280:168
+            x: 2109.0
+            y: -151.0
+            size: 18.0
+            fontWeight: 700
+            fontFamily: Plus Jakarta Sans
+            color: '#1A1C1C'
+            align: left
+      - type: icon
+        name: Button
+        id: 280:169
+        url: assets/icons/button.svg
+        width: 40.0
+        height: 40.0
+  - type: column
+    id: 280:172
+    x: 2045.0
+    y: -106.0
+    padding: 21.333333333333332
+    spacing: 40.0
+    background: '#000000'
+    width: 390.0
+    height: 879.0
+    children:
+    - type: column
+      id: 280:173
+      x: 2065.0
+      y: -82.0
+      spacing: 32.0
+      background: '#000000'
+      width: 350.0
+      height: 303.0
+      children:
+      - type: stack
+        id: 280:174
+        x: 2065.0
+        y: -82.0
+        background: '#000000'
+        width: 350.0
+        height: 177.0
+        children:
+        - type: column
+          id: 280:175
+          x: 2135.8798828125
+          y: 30.0
+          background: '#000000'
+          width: 208.25
+          height: 41.0
+          children:
+          - type: text
+            value: Alex Johnson
+            id: 280:176
+            x: 2135.8798828125
+            y: 30.0
+            size: 34.0
+            fontWeight: 800
+            fontFamily: Plus Jakarta Sans
+            color: '#1A1C1C'
+            align: left
+        - type: column
+          id: 280:177
+          x: 2128.18994140625
+          y: 71.0
+          background: '#000000'
+          width: 223.6300048828125
+          height: 24.0
+          children:
+          - type: text
+            value: Pro Member since June 2023
+            id: 280:178
+            x: 2128.18994140625
+            y: 71.0
+            size: 16.0
+            fontWeight: 400
+            fontFamily: Inter
+            color: '#737686'
+            align: left
+        - type: column
+          id: 280:179
+          x: 2192.0
+          y: -82.0
+          padding: 16.0
+          background: '#000000'
+          width: 96.0
+          height: 112.0
+          children:
+          - type: column
+            id: 280:180
+            x: 2192.0
+            y: -82.0
+            background: '#000000'
+            width: 96.0
+            height: 96.0
+            children:
+            - type: icon
+              name: Background+Border+Shadow
+              id: 280:181
+              url: assets/icons/backgroundbordershadow.svg
+              width: 96.0
+              height: 96.0
+            - type: icon
+              name: Background+Border
+              id: 280:183
+              url: assets/icons/backgroundborder.svg
+              width: 28.0
+              height: 28.0
+      - type: stack
+        id: 280:185
+        x: 2065.0
+        y: 127.0
+        background: '#000000'
+        width: 350.0
+        height: 94.0
+        children:
+        - type: column
+          id: 280:186
+          x: 2065.0
+          y: 127.0
+          padding: 20.0
+          spacing: 8.0
+          background: '#FFFFFF'
+          radius: 12.0
+          width: 169.0
+          height: 90.5
+          children:
+          - type: row
+            id: 280:187
+            x: 2086.0
+            y: 148.0
+            spacing: 8.0
+            background: '#000000'
+            width: 127.0
+            height: 16.5
+            children:
+            - type: icon
+              name: Container
+              id: 280:188
+              url: assets/icons/container.svg
+              width: 16.5
+              height: 16.5
+            - type: column
+              id: 280:190
+              x: 2110.5
+              y: 148.25
+              background: '#000000'
+              width: 87.22000122070312
+              height: 16.0
+              children:
+              - type: text
+                value: ACTIVE GOAL
+                id: 280:191
+                x: 2110.5
+                y: 148.25
+                size: 12.0
+                fontWeight: 600
+                fontFamily: Inter
+                color: '#737686'
+                align: left
+          - type: column
+            id: 280:192
+            x: 2086.0
+            y: 172.5
+            background: '#000000'
+            width: 127.0
+            height: 24.0
+            children:
+            - type: text
+              value: Build Muscle
+              id: 280:193
+              x: 2086.0
+              y: 172.5
+              size: 18.0
+              fontWeight: 700
+              fontFamily: Plus Jakarta Sans
+              color: '#1A1C1C'
+              align: left
+        - type: column
+          id: 280:194
+          x: 2246.0
+          y: 127.0
+          padding: 20.0
+          spacing: 8.0
+          background: '#FFFFFF'
+          radius: 12.0
+          width: 169.0
+          height: 90.66666412353516
+          children:
+          - type: row
+            id: 280:195
+            x: 2267.0
+            y: 148.0
+            spacing: 8.0
+            background: '#000000'
+            width: 127.0
+            height: 16.66666603088379
+            children:
+            - type: icon
+              name: Container
+              id: 280:196
+              url: assets/icons/container.svg
+              width: 15.0
+              height: 16.66666603088379
+            - type: column
+              id: 280:198
+              x: 2290.0
+              y: 148.3333282470703
+              background: '#000000'
+              width: 79.44000244140625
+              height: 16.0
+              children:
+              - type: text
+                value: FREQUENCY
+                id: 280:199
+                x: 2290.0
+                y: 148.3333282470703
+                size: 12.0
+                fontWeight: 600
+                fontFamily: Inter
+                color: '#737686'
+                align: left
+          - type: column
+            id: 280:200
+            x: 2267.0
+            y: 172.66665649414062
+            background: '#000000'
+            width: 127.0
+            height: 24.0
+            children:
+            - type: text
+              value: 3 Days/Week
+              id: 280:201
+              x: 2267.0
+              y: 172.66665649414062
+              size: 18.0
+              fontWeight: 700
+              fontFamily: Plus Jakarta Sans
+              color: '#1A1C1C'
+              align: left
+    - type: column
+      id: 280:202
+      x: 2065.0
+      y: 261.0
+      spacing: 16.0
+      background: '#000000'
+      width: 350.0
+      height: 512.0
+      children:
+      - type: column
+        id: 280:203
+        x: 2065.0
+        y: 261.0
+        padding: 8.0
+        background: '#000000'
+        width: 350.0
+        height: 16.0
+        children:
+        - type: text
+          value: PREFERENCES & ACCOUNT
+          id: 280:204
+          x: 2073.0
+          y: 261.0
+          size: 12.0
+          fontWeight: 600
+          fontFamily: Inter
+          color: '#737686'
+          align: left
+      - type: column
+        id: 280:205
+        x: 2065.0
+        y: 293.0
+        background: '#FFFFFF'
+        radius: 12.0
+        width: 350.0
+        height: 293.0
+        children:
+        - type: row
+          id: 280:206
+          x: 2066.0
+          y: 294.0
+          padding: 20.0
+          spacing: 59.5099983215332
+          background: '#000000'
+          width: 348.0
+          height: 73.0
+          children:
+          - type: row
+            id: 280:207
+            x: 2086.0
+            y: 314.0
+            spacing: 12.0
+            background: '#000000'
+            width: 123.58000183105469
+            height: 32.0
+            children:
+            - type: icon
+              name: Background
+              id: 280:208
+              url: assets/icons/background.svg
+              width: 32.0
+              height: 32.0
+            - type: column
+              id: 280:211
+              x: 2130.0
+              y: 318.0
+              background: '#000000'
+              width: 79.58000183105469
+              height: 24.0
+              children:
+              - type: text
+                value: Language
+                id: 280:212
+                x: 2130.0
+                y: 318.0
+                size: 17.0
+                fontWeight: 400
+                fontFamily: Inter
+                color: '#1A1C1C'
+                align: left
+          - type: row
+            id: 280:213
+            x: 2285.7099609375
+            y: 318.0
+            spacing: 8.0
+            background: '#000000'
+            width: 108.29000091552734
+            height: 24.0
+            children:
+            - type: column
+              id: 280:214
+              x: 2285.7099609375
+              y: 318.0
+              background: '#000000'
+              width: 92.88999938964844
+              height: 24.0
+              children:
+              - type: text
+                value: English (US)
+                id: 280:215
+                x: 2285.7099609375
+                y: 318.0
+                size: 16.0
+                fontWeight: 400
+                fontFamily: Inter
+                color: '#737686'
+                align: left
+            - type: icon
+              name: Container
+              id: 280:216
+              url: assets/icons/container.svg
+              width: 7.400000095367432
+              height: 12.0
+        - type: row
+          id: 280:218
+          x: 2066.0
+          y: 367.0
+          padding: 20.0
+          spacing: 83.29000091552734
+          background: '#000000'
+          width: 348.0
+          height: 73.0
+          children:
+          - type: row
+            id: 280:219
+            x: 2086.0
+            y: 387.0
+            spacing: 12.0
+            background: '#000000'
+            width: 200.69000244140625
+            height: 32.0
+            children:
+            - type: icon
+              name: Background
+              id: 280:220
+              url: assets/icons/background.svg
+              width: 32.0
+              height: 32.0
+            - type: column
+              id: 280:223
+              x: 2130.0
+              y: 391.0
+              background: '#000000'
+              width: 156.69000244140625
+              height: 24.0
+              children:
+              - type: text
+                value: Reset Workout Plan
+                id: 280:224
+                x: 2130.0
+                y: 391.0
+                size: 17.0
+                fontWeight: 400
+                fontFamily: Inter
+                color: '#1A1C1C'
+                align: left
+          - type: icon
+            name: Container
+            id: 280:225
+            url: assets/icons/container.svg
+            width: 7.400000095367432
+            height: 12.0
+        - type: row
+          id: 280:227
+          x: 2066.0
+          y: 440.0
+          padding: 20.0
+          spacing: 176.33999633789062
+          background: '#000000'
+          width: 348.0
+          height: 73.0
+          children:
+          - type: row
+            id: 280:228
+            x: 2086.0
+            y: 460.0
+            spacing: 12.0
+            background: '#000000'
+            width: 107.63999938964844
+            height: 32.0
+            children:
+            - type: icon
+              name: Background
+              id: 280:229
+              url: assets/icons/background.svg
+              width: 32.0
+              height: 32.0
+            - type: column
+              id: 280:232
+              x: 2130.0
+              y: 464.0
+              background: '#000000'
+              width: 63.63999938964844
+              height: 24.0
+              children:
+              - type: text
+                value: Log Out
+                id: 280:233
+                x: 2130.0
+                y: 464.0
+                size: 17.0
+                fontWeight: 400
+                fontFamily: Inter
+                color: '#1A1C1C'
+                align: left
+          - type: icon
+            name: Container
+            id: 280:234
+            url: assets/icons/container.svg
+            width: 7.400000095367432
+            height: 12.0
+        - type: row
+          id: 280:236
+          x: 2066.0
+          y: 513.0
+          padding: 20.0
+          spacing: 116.66999816894531
+          background: '#000000'
+          width: 348.0
+          height: 72.0
+          children:
+          - type: row
+            id: 280:237
+            x: 2086.0
+            y: 533.0
+            spacing: 12.0
+            background: '#000000'
+            width: 167.30999755859375
+            height: 32.0
+            children:
+            - type: icon
+              name: Overlay
+              id: 280:238
+              url: assets/icons/overlay.svg
+              width: 32.0
+              height: 32.0
+            - type: column
+              id: 280:241
+              x: 2130.0
+              y: 537.0
+              background: '#000000'
+              width: 123.30999755859375
+              height: 24.0
+              children:
+              - type: text
+                value: Delete Account
+                id: 280:242
+                x: 2130.0
+                y: 537.0
+                size: 17.0
+                fontWeight: 400
+                fontFamily: Inter
+                color: '#BA1A1A'
+                align: left
+          - type: icon
+            name: Container
+            id: 280:243
+            url: assets/icons/container.svg
+            width: 7.400000095367432
+            height: 12.0
+      - type: column
+        id: 280:245
+        x: 2065.0
+        y: 602.0
+        background: '#FFFFFF'
+        radius: 12.0
+        width: 350.0
+        height: 131.0
+        children:
+        - type: row
+          id: 280:246
+          x: 2066.0
+          y: 603.0
+          padding: 20.0
+          spacing: 178.17999267578125
+          background: '#000000'
+          width: 348.0
+          height: 64.0
+          children:
+          - type: column
+            id: 280:247
+            x: 2086.0
+            y: 623.0
+            background: '#000000'
+            width: 105.80000305175781
+            height: 24.0
+            children:
+            - type: text
+              value: Privacy Policy
+              id: 280:248
+              x: 2086.0
+              y: 623.0
+              size: 16.0
+              fontWeight: 400
+              fontFamily: Inter
+              color: '#1A1C1C'
+              align: left
+          - type: icon
+            name: Container
+            id: 280:249
+            url: assets/icons/container.svg
+            width: 18.0
+            height: 18.0
+        - type: row
+          id: 280:251
+          x: 2066.0
+          y: 667.0
+          padding: 20.0
+          spacing: 155.1199951171875
+          background: '#000000'
+          width: 348.0
+          height: 65.0
+          children:
+          - type: column
+            id: 280:252
+            x: 2086.0
+            y: 688.0
+            background: '#000000'
+            width: 128.86000061035156
+            height: 24.0
+            children:
+            - type: text
+              value: Terms of Service
+              id: 280:253
+              x: 2086.0
+              y: 688.0
+              size: 16.0
+              fontWeight: 400
+              fontFamily: Inter
+              color: '#1A1C1C'
+              align: left
+          - type: icon
+            name: Container
+            id: 280:254
+            url: assets/icons/container.svg
+            width: 18.0
+            height: 18.0
+      - type: column
+        id: 280:256
+        x: 2065.0
+        y: 749.0
+        background: '#000000'
+        width: 350.0
+        height: 24.0
+        children:
+        - type: text
+          value: FitFlow Version 2.4.1 (882)
+          id: 280:257
+          x: 2140.080078125
+          y: 749.0
+          size: 16.0
+          fontWeight: 400
+          fontFamily: Inter
+          color: '#737686'
+          align: center

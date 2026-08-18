@@ -1,0 +1,593 @@
+screen:
+  name: FitFlow Onboarding (Pure)
+  children:
+  - type: column
+    id: 280:543
+    x: 333.0
+    y: -107.0
+    padding: 57.0
+    background: '#000000'
+    width: 390.0
+    height: 905.25
+    children:
+    - type: column
+      id: 280:544
+      x: 353.0
+      y: -107.0
+      padding: 32.0
+      spacing: 7.300000190734863
+      background: '#000000'
+      width: 350.0
+      height: 167.75
+      children:
+      - type: column
+        id: 280:547
+        x: 353.0
+        y: -75.0
+        padding: 7.699999809265137
+        background: '#000000'
+        width: 350.0
+        height: 50.70000076293945
+        children:
+        - type: text
+          value: Select Your Goal
+          id: 280:548
+          x: 353.0
+          y: -67.30000305175781
+          size: 34.0
+          fontWeight: 800
+          fontFamily: Plus Jakarta Sans
+          color: '#1A1C1C'
+          align: left
+      - type: column
+        id: 280:549
+        x: 353.0
+        y: -17.0
+        padding: 0.75
+        background: '#000000'
+        width: 350.0
+        height: 45.75
+        children:
+        - type: text
+          value: 'Customize your journey for precision
+
+            performance.'
+          id: 280:550
+          x: 353.0
+          y: -17.0
+          size: 15.0
+          fontWeight: 400
+          fontFamily: Inter
+          color: '#434655'
+          align: left
+    - type: column
+      id: 280:551
+      x: 353.0
+      y: 60.75
+      spacing: 12.0
+      background: '#000000'
+      width: 350.0
+      height: 287.0
+      children:
+      - type: row
+        id: 280:552
+        x: 353.0
+        y: 60.75
+        padding: 16.0
+        alignment: center
+        background: '#FFFFFF'
+        radius: 12.0
+        width: 350.0
+        height: 97.0
+        children:
+        - type: row
+          id: 280:553
+          x: 370.0
+          y: 77.75
+          spacing: 16.0
+          background: '#000000'
+          width: 316.0
+          height: 63.0
+          children:
+          - type: icon
+            name: Background
+            id: 280:554
+            url: assets/icons/background.svg
+            width: 48.0
+            height: 48.0
+          - type: column
+            id: 280:557
+            x: 434.0
+            y: 77.75
+            spacing: -0.75
+            background: '#000000'
+            width: 216.0
+            height: 63.0
+            children:
+            - type: column
+              id: 280:558
+              x: 434.0
+              y: 77.75
+              background: '#000000'
+              width: 216.0
+              height: 24.0
+              children:
+              - type: text
+                value: Build Muscle
+                id: 280:559
+                x: 434.0
+                y: 77.75
+                size: 16.0
+                fontWeight: 700
+                fontFamily: Plus Jakarta Sans
+                color: '#1A1C1C'
+                align: left
+            - type: column
+              id: 280:560
+              x: 434.0
+              y: 101.0
+              padding: 0.75
+              background: '#000000'
+              width: 216.0
+              height: 39.75
+              children:
+              - type: text
+                value: 'Focus on hypertrophy and
+
+                  strength.'
+                id: 280:561
+                x: 434.0
+                y: 101.0
+                size: 13.0
+                fontWeight: 400
+                fontFamily: Inter
+                color: '#434655'
+                align: left
+          - type: icon
+            name: Border
+            id: 280:562
+            url: assets/icons/border.svg
+            width: 20.0
+            height: 20.0
+      - type: row
+        id: 280:564
+        x: 353.0
+        y: 169.75
+        padding: 16.0
+        alignment: center
+        background: '#FFFFFF'
+        radius: 12.0
+        width: 350.0
+        height: 84.0
+        children:
+        - type: row
+          id: 280:565
+          x: 371.0
+          y: 187.75
+          spacing: 16.0
+          background: '#000000'
+          width: 314.0
+          height: 48.0
+          children:
+          - type: icon
+            name: Background
+            id: 280:566
+            url: assets/icons/background.svg
+            width: 48.0
+            height: 48.0
+          - type: column
+            id: 280:569
+            x: 435.0
+            y: 190.25
+            spacing: -1.0
+            background: '#000000'
+            width: 214.0
+            height: 43.0
+            children:
+            - type: column
+              id: 280:570
+              x: 435.0
+              y: 190.25
+              background: '#000000'
+              width: 214.0
+              height: 24.0
+              children:
+              - type: text
+                value: Get Strong
+                id: 280:571
+                x: 435.0
+                y: 190.25
+                size: 16.0
+                fontWeight: 700
+                fontFamily: Plus Jakarta Sans
+                color: '#1A1C1C'
+                align: left
+            - type: column
+              id: 280:572
+              x: 435.0
+              y: 213.25
+              background: '#000000'
+              width: 214.0
+              height: 20.0
+              children:
+              - type: text
+                value: Prioritize heavy lifting and power.
+                id: 280:573
+                x: 435.0
+                y: 213.25
+                size: 13.0
+                fontWeight: 400
+                fontFamily: Inter
+                color: '#434655'
+                align: left
+          - type: icon
+            name: Background
+            id: 280:574
+            url: assets/icons/background.svg
+            width: 20.0
+            height: 20.0
+      - type: row
+        id: 280:576
+        x: 353.0
+        y: 265.75
+        padding: 16.0
+        alignment: center
+        background: '#FFFFFF'
+        radius: 12.0
+        width: 350.0
+        height: 82.0
+        children:
+        - type: row
+          id: 280:577
+          x: 370.0
+          y: 282.75
+          spacing: 16.0
+          background: '#000000'
+          width: 316.0
+          height: 48.0
+          children:
+          - type: icon
+            name: Background
+            id: 280:578
+            url: assets/icons/background.svg
+            width: 48.0
+            height: 48.0
+          - type: column
+            id: 280:581
+            x: 434.0
+            y: 285.25
+            spacing: -1.0
+            background: '#000000'
+            width: 216.0
+            height: 43.0
+            children:
+            - type: column
+              id: 280:582
+              x: 434.0
+              y: 285.25
+              background: '#000000'
+              width: 216.0
+              height: 24.0
+              children:
+              - type: text
+                value: General Fitness
+                id: 280:583
+                x: 434.0
+                y: 285.25
+                size: 16.0
+                fontWeight: 700
+                fontFamily: Plus Jakarta Sans
+                color: '#1A1C1C'
+                align: left
+            - type: column
+              id: 280:584
+              x: 434.0
+              y: 308.25
+              background: '#000000'
+              width: 216.0
+              height: 20.0
+              children:
+              - type: text
+                value: Balanced health and mobility.
+                id: 280:585
+                x: 434.0
+                y: 308.25
+                size: 13.0
+                fontWeight: 400
+                fontFamily: Inter
+                color: '#434655'
+                align: left
+          - type: icon
+            name: Border
+            id: 280:586
+            url: assets/icons/border.svg
+            width: 20.0
+            height: 20.0
+    - type: stack
+      id: 280:588
+      x: 353.0
+      y: 347.75
+      background: '#000000'
+      width: 350.0
+      height: 319.5
+      children:
+      - type: row
+        id: 280:589
+        x: 353.0
+        y: 387.75
+        background: '#000000'
+        width: 350.0
+        height: 28.0
+        children:
+        - type: column
+          id: 280:590
+          x: 353.0
+          y: 387.75
+          background: '#000000'
+          width: 155.69000244140625
+          height: 28.0
+          children:
+          - type: text
+            value: Weekly Availability
+            id: 280:591
+            x: 353.0
+            y: 387.75
+            size: 18.0
+            fontWeight: 700
+            fontFamily: Plus Jakarta Sans
+            color: '#1A1C1C'
+            align: left
+      - type: row
+        id: 280:592
+        x: 353.0
+        y: 431.75
+        padding: 4.0
+        spacing: 4.0
+        background: '#FFFFFF'
+        radius: 12.0
+        width: 350.0
+        height: 54.0
+        children:
+        - type: column
+          id: 280:593
+          x: 358.0
+          y: 436.75
+          padding: 12.0
+          alignment: center
+          background: '#000000'
+          width: 85.0
+          height: 44.0
+          children:
+          - type: text
+            value: 2 Days
+            id: 280:594
+            x: 379.0950012207031
+            y: 448.75
+            size: 13.0
+            fontWeight: 600
+            fontFamily: Inter
+            color: '#94A3B8'
+            align: center
+        - type: button
+          label: 3 Days
+          id: 280:595
+          x: 443.0
+          y: 436.75
+          background: '#2563EB'
+          radius: 8.0
+          width: 85.0
+          height: 44.0
+        - type: column
+          id: 280:597
+          x: 528.0
+          y: 436.75
+          padding: 12.0
+          alignment: center
+          background: '#000000'
+          width: 85.0
+          height: 44.0
+          children:
+          - type: text
+            value: 4 Days
+            id: 280:598
+            x: 548.8099975585938
+            y: 448.75
+            size: 13.0
+            fontWeight: 600
+            fontFamily: Inter
+            color: '#94A3B8'
+            align: center
+        - type: column
+          id: 280:599
+          x: 613.0
+          y: 436.75
+          padding: 12.0
+          alignment: center
+          background: '#000000'
+          width: 85.0
+          height: 44.0
+          children:
+          - type: text
+            value: 5+ Days
+            id: 280:600
+            x: 629.7899780273438
+            y: 448.75
+            size: 13.0
+            fontWeight: 600
+            fontFamily: Inter
+            color: '#94A3B8'
+            align: center
+      - type: column
+        id: 280:601
+        x: 353.0
+        y: 517.25
+        alignment: center
+        background: '#FFFFFF'
+        radius: 12.0
+        width: 350.0
+        height: 150.0
+        children:
+        - type: image
+          name: Fitness concept
+          id: 280:602
+          url: assets/images/fitness_concept.png
+          width: 348.0
+          height: 148.0
+          x: 354.0
+          y: 518.25
+        - type: container
+          width: 348.0
+          height: 148.0
+          id: 280:603
+          x: 354.0
+          y: 518.25
+        - type: row
+          id: 280:604
+          x: 370.0
+          y: 633.25
+          spacing: 103.91000366210938
+          background: '#000000'
+          width: 316.0
+          height: 17.0
+          children:
+          - type: column
+            id: 280:605
+            x: 370.0
+            y: 634.25
+            background: '#000000'
+            width: 91.2300033569336
+            height: 15.0
+            children:
+            - type: text
+              value: RECOMMENDED
+              id: 280:606
+              x: 370.0
+              y: 634.25
+              size: 10.0
+              fontWeight: 700
+              fontFamily: Inter
+              color: '#2563EB'
+              align: left
+          - type: column
+            id: 280:607
+            x: 565.1400146484375
+            y: 633.25
+            background: '#000000'
+            width: 120.86000061035156
+            height: 17.0
+            children:
+            - type: text
+              value: Optimal recovery cycle
+              id: 280:608
+              x: 565.1400146484375
+              y: 633.25
+              size: 11.0
+              fontWeight: 500
+              fontFamily: Inter
+              color: '#64748B'
+              align: left
+  - type: row
+    id: 280:609
+    x: 333.0
+    y: -171.0
+    padding: 24.0
+    spacing: 233.22000122070312
+    background: '#FBFBFB'
+    width: 390.0
+    height: 64.0
+    children:
+    - type: column
+      id: 280:610
+      x: 357.0
+      y: -153.5
+      background: '#000000'
+      width: 68.77999877929688
+      height: 28.0
+      children:
+      - type: text
+        value: FitFlow
+        id: 280:611
+        x: 357.0
+        y: -153.5
+        size: 20.0
+        fontWeight: 700
+        fontFamily: Plus Jakarta Sans
+        color: '#2563EB'
+        align: left
+    - type: icon
+      name: Container
+      id: 280:612
+      url: assets/icons/container.svg
+      width: 40.0
+      height: 40.0
+  - type: column
+    id: 280:615
+    x: 333.0
+    y: 693.0
+    padding: 24.0
+    background: '#FFFFFF'
+    width: 390.0
+    height: 136.0
+    children:
+    - type: column
+      id: 280:616
+      x: 357.0
+      y: 718.0
+      spacing: 16.0
+      background: '#000000'
+      width: 342.0
+      height: 87.0
+      children:
+      - type: row
+        id: 280:617
+        x: 357.0
+        y: 718.0
+        spacing: 8.0
+        alignment: center
+        background: '#2563EB'
+        radius: 9999.0
+        width: 342.0
+        height: 56.0
+        children:
+        - type: stack
+          id: 280:618
+          x: 478.70501708984375
+          y: 733.25
+          background: '#000000'
+          width: 74.58999633789062
+          height: 25.5
+          children:
+          - type: text
+            value: Continue
+            id: 280:619
+            x: 478.70501708984375
+            y: 732.25
+            size: 17.0
+            fontWeight: 700
+            fontFamily: Inter
+            color: '#FFFFFF'
+            align: center
+        - type: icon
+          name: Container
+          id: 280:620
+          url: assets/icons/container.svg
+          width: 16.0
+          height: 16.0
+      - type: column
+        id: 280:622
+        x: 357.0
+        y: 790.0
+        background: '#000000'
+        width: 342.0
+        height: 15.0
+        children:
+        - type: text
+          value: YOU CAN CHANGE THIS LATER IN PROFILE
+          id: 280:623
+          x: 405.9700012207031
+          y: 790.0
+          size: 10.0
+          fontWeight: 700
+          fontFamily: Inter
+          color: '#94A3B8'
+          align: center

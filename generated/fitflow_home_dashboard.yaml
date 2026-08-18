@@ -1,0 +1,1291 @@
+screen:
+  name: FitFlow Home Dashboard
+  children:
+  - type: column
+    id: 280:371
+    x: 757.0
+    y: -107.0
+    padding: 21.333333333333332
+    spacing: 12.0
+    background: '#000000'
+    width: 390.0
+    height: 1034.800048828125
+    children:
+    - type: column
+      id: 280:372
+      x: 777.0
+      y: -83.0
+      spacing: 12.0
+      background: '#000000'
+      width: 350.0
+      height: 134.0
+      children:
+      - type: row
+        id: 280:373
+        x: 777.0
+        y: -83.0
+        spacing: 157.0
+        background: '#000000'
+        width: 350.0
+        height: 24.0
+        children:
+        - type: column
+          id: 280:374
+          x: 777.0
+          y: -83.0
+          background: '#000000'
+          width: 148.6300048828125
+          height: 24.0
+          children:
+          - type: text
+            value: Weekly Blueprint
+            id: 280:375
+            x: 777.0
+            y: -83.0
+            size: 18.0
+            fontWeight: 700
+            fontFamily: Plus Jakarta Sans
+            color: '#1A1C1C'
+            align: left
+        - type: column
+          id: 280:376
+          x: 1082.6199951171875
+          y: -79.0
+          background: '#000000'
+          width: 44.380001068115234
+          height: 16.0
+          children:
+          - type: text
+            value: Week 1
+            id: 280:377
+            x: 1082.6199951171875
+            y: -79.0
+            size: 12.0
+            fontWeight: 600
+            fontFamily: Inter
+            color: '#004AC6'
+            align: left
+      - type: row
+        id: 280:378
+        x: 777.0
+        y: -47.0
+        padding: 16.0
+        spacing: 6.0
+        background: '#FFFFFF'
+        radius: 12.0
+        width: 350.0
+        height: 98.0
+        children:
+        - type: column
+          id: 280:379
+          x: 794.0
+          y: -30.0
+          spacing: 8.0
+          background: '#000000'
+          width: 40.0
+          height: 64.0
+          children:
+          - type: column
+            id: 280:380
+            x: 808.1649780273438
+            y: -30.0
+            background: '#000000'
+            width: 11.670000076293945
+            height: 16.0
+            children:
+            - type: text
+              value: M
+              id: 280:381
+              x: 808.1649780273438
+              y: -30.0
+              size: 12.0
+              fontWeight: 600
+              fontFamily: Inter
+              color: '#94A3B8'
+              align: left
+          - type: button
+            label: '12'
+            id: 280:382
+            x: 794.0
+            y: -6.0
+            background: '#2563EB'
+            radius: 9999.0
+            width: 40.0
+            height: 40.0
+        - type: column
+          id: 280:384
+          x: 840.0
+          y: -30.0
+          spacing: 8.0
+          background: '#000000'
+          width: 40.0
+          height: 64.0
+          children:
+          - type: column
+            id: 280:385
+            x: 855.7349853515625
+            y: -30.0
+            background: '#000000'
+            width: 8.529999732971191
+            height: 16.0
+            children:
+            - type: text
+              value: T
+              id: 280:386
+              x: 855.7349853515625
+              y: -30.0
+              size: 12.0
+              fontWeight: 600
+              fontFamily: Inter
+              color: '#94A3B8'
+              align: left
+          - type: button
+            label: '13'
+            id: 280:387
+            x: 840.0
+            y: -6.0
+            background: '#EEEEEE'
+            radius: 9999.0
+            width: 40.0
+            height: 40.0
+        - type: column
+          id: 280:389
+          x: 886.0
+          y: -30.0
+          spacing: 8.0
+          background: '#000000'
+          width: 40.0
+          height: 64.0
+          children:
+          - type: column
+            id: 280:390
+            x: 899.5800170898438
+            y: -30.0
+            background: '#000000'
+            width: 12.84000015258789
+            height: 16.0
+            children:
+            - type: text
+              value: W
+              id: 280:391
+              x: 899.5800170898438
+              y: -30.0
+              size: 12.0
+              fontWeight: 600
+              fontFamily: Inter
+              color: '#94A3B8'
+              align: left
+          - type: button
+            label: '14'
+            id: 280:392
+            x: 886.0
+            y: -6.0
+            background: '#2563EB'
+            radius: 9999.0
+            width: 40.0
+            height: 40.0
+        - type: column
+          id: 280:394
+          x: 932.0
+          y: -30.0
+          spacing: 8.0
+          background: '#000000'
+          width: 40.0
+          height: 64.0
+          children:
+          - type: column
+            id: 280:395
+            x: 947.7349853515625
+            y: -30.0
+            background: '#000000'
+            width: 8.529999732971191
+            height: 16.0
+            children:
+            - type: text
+              value: T
+              id: 280:396
+              x: 947.7349853515625
+              y: -30.0
+              size: 12.0
+              fontWeight: 600
+              fontFamily: Inter
+              color: '#94A3B8'
+              align: left
+          - type: button
+            label: '15'
+            id: 280:397
+            x: 932.0
+            y: -6.0
+            background: '#EEEEEE'
+            radius: 9999.0
+            width: 40.0
+            height: 40.0
+        - type: column
+          id: 280:399
+          x: 978.0
+          y: -30.0
+          spacing: 8.0
+          background: '#000000'
+          width: 40.0
+          height: 64.0
+          children:
+          - type: column
+            id: 280:400
+            x: 994.1699829101562
+            y: -30.0
+            background: '#000000'
+            width: 7.659999847412109
+            height: 16.0
+            children:
+            - type: text
+              value: F
+              id: 280:401
+              x: 994.1699829101562
+              y: -30.0
+              size: 12.0
+              fontWeight: 600
+              fontFamily: Inter
+              color: '#94A3B8'
+              align: left
+          - type: button
+            label: '16'
+            id: 280:402
+            x: 978.0
+            y: -6.0
+            background: '#2563EB'
+            radius: 9999.0
+            width: 40.0
+            height: 40.0
+        - type: column
+          id: 280:404
+          x: 1024.0
+          y: -30.0
+          spacing: 8.0
+          background: '#000000'
+          width: 40.0
+          height: 64.0
+          children:
+          - type: column
+            id: 280:405
+            x: 1039.7950439453125
+            y: -30.0
+            background: '#000000'
+            width: 8.40999984741211
+            height: 16.0
+            children:
+            - type: text
+              value: S
+              id: 280:406
+              x: 1039.7950439453125
+              y: -30.0
+              size: 12.0
+              fontWeight: 600
+              fontFamily: Inter
+              color: '#94A3B8'
+              align: left
+          - type: icon
+            name: Background
+            id: 280:407
+            url: assets/icons/background.svg
+            width: 40.0
+            height: 40.0
+        - type: column
+          id: 280:409
+          x: 1070.0
+          y: -30.0
+          spacing: 8.0
+          background: '#000000'
+          width: 40.0
+          height: 64.0
+          children:
+          - type: column
+            id: 280:410
+            x: 1085.7950439453125
+            y: -30.0
+            background: '#000000'
+            width: 8.40999984741211
+            height: 16.0
+            children:
+            - type: text
+              value: S
+              id: 280:411
+              x: 1085.7950439453125
+              y: -30.0
+              size: 12.0
+              fontWeight: 600
+              fontFamily: Inter
+              color: '#94A3B8'
+              align: left
+          - type: button
+            label: '18'
+            id: 280:412
+            x: 1070.0
+            y: -6.0
+            background: '#EEEEEE'
+            radius: 9999.0
+            width: 40.0
+            height: 40.0
+    - type: column
+      id: 280:414
+      x: 777.0
+      y: 63.0
+      padding: 20.0
+      background: '#FFFFFF'
+      radius: 12.0
+      width: 350.0
+      height: 246.8000030517578
+      children:
+      - type: container
+        width: 192.0
+        height: 192.0
+        background: '#004AC6'
+        radius: 9999.0
+        id: 280:415
+        x: 982.0
+        y: 16.0
+      - type: column
+        id: 280:416
+        x: 778.0
+        y: 80.0
+        background: '#000000'
+        width: 364.0
+        height: 364.0
+        children:
+        - type: image
+          name: 3D weights representation
+          id: 280:417
+          url: assets/images/3d_weights_representation.png
+          width: 364.0
+          height: 364.0
+          x: 778.0
+          y: 80.0
+      - type: column
+        id: 280:418
+        x: 798.0
+        y: 84.0
+        spacing: 8.0
+        background: '#000000'
+        width: 308.0
+        height: 204.8000030517578
+        children:
+        - type: row
+          id: 280:419
+          x: 798.0
+          y: 84.0
+          spacing: 8.0
+          background: '#000000'
+          width: 308.0
+          height: 35.79999923706055
+          children:
+          - type: icon
+            name: Overlay
+            id: 280:420
+            url: assets/icons/overlay.svg
+            width: 35.79999923706055
+            height: 35.79999923706055
+          - type: column
+            id: 280:422
+            x: 841.7999877929688
+            y: 93.9000015258789
+            background: '#000000'
+            width: 92.94000244140625
+            height: 16.0
+            children:
+            - type: text
+              value: ACTIVE PLAN
+              id: 280:423
+              x: 841.7999877929688
+              y: 93.9000015258789
+              size: 12.0
+              fontWeight: 600
+              fontFamily: Inter
+              color: '#004AC6'
+              align: left
+        - type: column
+          id: 280:424
+          x: 798.0
+          y: 127.80000305175781
+          padding: 8.0
+          background: '#000000'
+          width: 308.0
+          height: 49.0
+          children:
+          - type: text
+            value: Upper Body Basics
+            id: 280:425
+            x: 798.0
+            y: 135.8000030517578
+            size: 34.0
+            fontWeight: 800
+            fontFamily: Plus Jakarta Sans
+            color: '#1A1C1C'
+            align: left
+        - type: row
+          id: 280:426
+          x: 798.0
+          y: 184.8000030517578
+          padding: 16.0
+          spacing: 12.0
+          background: '#000000'
+          width: 308.0
+          height: 40.0
+          children:
+          - type: row
+            id: 280:427
+            x: 798.0
+            y: 184.8000030517578
+            spacing: 4.0
+            background: '#000000'
+            width: 98.91999816894531
+            height: 24.0
+            children:
+            - type: icon
+              name: Container
+              id: 280:428
+              url: assets/icons/container.svg
+              width: 10.5
+              height: 12.25
+            - type: text
+              value: 45 Minutes
+              id: 280:430
+              x: 812.5
+              y: 184.8000030517578
+              size: 16.0
+              fontWeight: 400
+              fontFamily: Inter
+              color: '#64748B'
+              align: left
+          - type: row
+            id: 280:431
+            x: 908.9199829101562
+            y: 184.8000030517578
+            spacing: 3.990000009536743
+            background: '#000000'
+            width: 101.6500015258789
+            height: 24.0
+            children:
+            - type: icon
+              name: Container
+              id: 280:432
+              url: assets/icons/container.svg
+              width: 10.5
+              height: 10.5
+            - type: text
+              value: 4 Exercises
+              id: 280:434
+              x: 923.4099731445312
+              y: 184.8000030517578
+              size: 16.0
+              fontWeight: 400
+              fontFamily: Inter
+              color: '#64748B'
+              align: left
+        - type: button
+          label: Start Workout
+          id: 280:435
+          x: 798.0
+          y: 232.8000030517578
+          background: '#2563EB'
+          radius: 9999.0
+          width: 308.0
+          height: 56.0
+    - type: column
+      id: 280:439
+      x: 777.0
+      y: 321.79998779296875
+      spacing: 16.0
+      background: '#000000'
+      width: 350.0
+      height: 404.0
+      children:
+      - type: column
+        id: 280:440
+        x: 777.0
+        y: 321.79998779296875
+        padding: 4.0
+        background: '#000000'
+        width: 350.0
+        height: 24.0
+        children:
+        - type: text
+          value: Today's Exercises
+          id: 280:441
+          x: 781.0
+          y: 321.79998779296875
+          size: 18.0
+          fontWeight: 700
+          fontFamily: Plus Jakarta Sans
+          color: '#1A1C1C'
+          align: left
+      - type: column
+        id: 280:442
+        x: 777.0
+        y: 361.79998779296875
+        spacing: 12.0
+        background: '#000000'
+        width: 350.0
+        height: 364.0
+        children:
+        - type: row
+          id: 280:443
+          x: 777.0
+          y: 361.79998779296875
+          padding: 16.0
+          spacing: 25.760000228881836
+          background: '#FFFFFF'
+          radius: 12.0
+          width: 350.0
+          height: 82.0
+          children:
+          - type: row
+            id: 280:444
+            x: 794.0
+            y: 378.79998779296875
+            spacing: 16.0
+            background: '#000000'
+            width: 234.22000122070312
+            height: 48.0
+            children:
+            - type: icon
+              name: Background
+              id: 280:445
+              url: assets/icons/background.svg
+              width: 48.0
+              height: 48.0
+            - type: column
+              id: 280:448
+              x: 858.0
+              y: 380.79998779296875
+              background: '#000000'
+              width: 170.22000122070312
+              height: 44.0
+              children:
+              - type: column
+                id: 280:449
+                x: 858.0
+                y: 380.79998779296875
+                background: '#000000'
+                width: 170.22000122070312
+                height: 24.0
+                children:
+                - type: text
+                  value: Dumbbell Bench Press
+                  id: 280:450
+                  x: 858.0
+                  y: 380.79998779296875
+                  size: 16.0
+                  fontWeight: 400
+                  fontFamily: Plus Jakarta Sans
+                  color: '#1A1C1C'
+                  align: left
+              - type: column
+                id: 280:451
+                x: 858.0
+                y: 404.79998779296875
+                background: '#000000'
+                width: 170.22000122070312
+                height: 20.0
+                children:
+                - type: text
+                  value: Chest & Triceps
+                  id: 280:452
+                  x: 858.0
+                  y: 404.79998779296875
+                  size: 14.0
+                  fontWeight: 400
+                  fontFamily: Inter
+                  color: '#94A3B8'
+                  align: left
+          - type: column
+            id: 280:453
+            x: 1053.97998046875
+            y: 385.04998779296875
+            spacing: 0.5
+            background: '#000000'
+            width: 56.02000045776367
+            height: 35.5
+            children:
+            - type: text
+              value: 3 x 8-10
+              id: 280:454
+              x: 1053.97998046875
+              y: 385.04998779296875
+              size: 14.0
+              fontWeight: 700
+              fontFamily: Inter
+              color: '#004AC6'
+              align: right
+            - type: column
+              id: 280:455
+              x: 1053.97998046875
+              y: 405.54998779296875
+              background: '#000000'
+              width: 56.02000045776367
+              height: 15.0
+              children:
+              - type: text
+                value: REPS
+                id: 280:456
+                x: 1084.75
+                y: 405.54998779296875
+                size: 10.0
+                fontWeight: 400
+                fontFamily: Inter
+                color: '#94A3B8'
+                align: right
+        - type: row
+          id: 280:457
+          x: 777.0
+          y: 455.79998779296875
+          padding: 16.0
+          spacing: 50.91999816894531
+          background: '#FFFFFF'
+          radius: 12.0
+          width: 350.0
+          height: 82.0
+          children:
+          - type: row
+            id: 280:458
+            x: 794.0
+            y: 472.79998779296875
+            spacing: 16.0
+            background: '#000000'
+            width: 203.3800048828125
+            height: 48.0
+            children:
+            - type: icon
+              name: Background
+              id: 280:459
+              url: assets/icons/background.svg
+              width: 48.0
+              height: 48.0
+            - type: column
+              id: 280:462
+              x: 858.0
+              y: 474.79998779296875
+              background: '#000000'
+              width: 139.3800048828125
+              height: 44.0
+              children:
+              - type: column
+                id: 280:463
+                x: 858.0
+                y: 474.79998779296875
+                background: '#000000'
+                width: 139.3800048828125
+                height: 24.0
+                children:
+                - type: text
+                  value: Seated Cable Row
+                  id: 280:464
+                  x: 858.0
+                  y: 474.79998779296875
+                  size: 16.0
+                  fontWeight: 400
+                  fontFamily: Plus Jakarta Sans
+                  color: '#1A1C1C'
+                  align: left
+              - type: column
+                id: 280:465
+                x: 858.0
+                y: 498.79998779296875
+                background: '#000000'
+                width: 139.3800048828125
+                height: 20.0
+                children:
+                - type: text
+                  value: Upper Back & Lats
+                  id: 280:466
+                  x: 858.0
+                  y: 498.79998779296875
+                  size: 14.0
+                  fontWeight: 400
+                  fontFamily: Inter
+                  color: '#94A3B8'
+                  align: left
+          - type: column
+            id: 280:467
+            x: 1048.300048828125
+            y: 479.04998779296875
+            spacing: 0.5
+            background: '#000000'
+            width: 61.70000076293945
+            height: 35.5
+            children:
+            - type: text
+              value: 3 x 10-12
+              id: 280:468
+              x: 1048.300048828125
+              y: 479.04998779296875
+              size: 14.0
+              fontWeight: 700
+              fontFamily: Inter
+              color: '#004AC6'
+              align: right
+            - type: column
+              id: 280:469
+              x: 1048.300048828125
+              y: 499.54998779296875
+              background: '#000000'
+              width: 61.70000076293945
+              height: 15.0
+              children:
+              - type: text
+                value: REPS
+                id: 280:470
+                x: 1084.75
+                y: 499.54998779296875
+                size: 10.0
+                fontWeight: 400
+                fontFamily: Inter
+                color: '#94A3B8'
+                align: right
+        - type: row
+          id: 280:471
+          x: 777.0
+          y: 549.7999877929688
+          padding: 16.0
+          spacing: 75.3499984741211
+          background: '#FFFFFF'
+          radius: 12.0
+          width: 350.0
+          height: 82.0
+          children:
+          - type: row
+            id: 280:472
+            x: 794.0
+            y: 566.7999877929688
+            spacing: 16.0
+            background: '#000000'
+            width: 184.6300048828125
+            height: 48.0
+            children:
+            - type: icon
+              name: Background
+              id: 280:473
+              url: assets/icons/background.svg
+              width: 48.0
+              height: 48.0
+            - type: column
+              id: 280:476
+              x: 858.0
+              y: 568.7999877929688
+              background: '#000000'
+              width: 120.62999725341797
+              height: 44.0
+              children:
+              - type: column
+                id: 280:477
+                x: 858.0
+                y: 568.7999877929688
+                background: '#000000'
+                width: 120.62999725341797
+                height: 24.0
+                children:
+                - type: text
+                  value: Overhead Press
+                  id: 280:478
+                  x: 858.0
+                  y: 568.7999877929688
+                  size: 16.0
+                  fontWeight: 400
+                  fontFamily: Plus Jakarta Sans
+                  color: '#1A1C1C'
+                  align: left
+              - type: column
+                id: 280:479
+                x: 858.0
+                y: 592.7999877929688
+                background: '#000000'
+                width: 120.62999725341797
+                height: 20.0
+                children:
+                - type: text
+                  value: Shoulders
+                  id: 280:480
+                  x: 858.0
+                  y: 592.7999877929688
+                  size: 14.0
+                  fontWeight: 400
+                  fontFamily: Inter
+                  color: '#94A3B8'
+                  align: left
+          - type: column
+            id: 280:481
+            x: 1053.97998046875
+            y: 573.0499877929688
+            spacing: 0.5
+            background: '#000000'
+            width: 56.02000045776367
+            height: 35.5
+            children:
+            - type: text
+              value: 3 x 8-10
+              id: 280:482
+              x: 1053.97998046875
+              y: 573.0499877929688
+              size: 14.0
+              fontWeight: 700
+              fontFamily: Inter
+              color: '#004AC6'
+              align: right
+            - type: column
+              id: 280:483
+              x: 1053.97998046875
+              y: 593.5499877929688
+              background: '#000000'
+              width: 56.02000045776367
+              height: 15.0
+              children:
+              - type: text
+                value: REPS
+                id: 280:484
+                x: 1084.75
+                y: 593.5499877929688
+                size: 10.0
+                fontWeight: 400
+                fontFamily: Inter
+                color: '#94A3B8'
+                align: right
+        - type: row
+          id: 280:485
+          x: 777.0
+          y: 643.7999877929688
+          padding: 16.0
+          spacing: 87.58999633789062
+          background: '#FFFFFF'
+          radius: 12.0
+          width: 350.0
+          height: 82.0
+          children:
+          - type: row
+            id: 280:486
+            x: 794.0
+            y: 660.7999877929688
+            spacing: 16.0
+            background: '#000000'
+            width: 167.3800048828125
+            height: 48.0
+            children:
+            - type: icon
+              name: Background
+              id: 280:487
+              url: assets/icons/background.svg
+              width: 48.0
+              height: 48.0
+            - type: column
+              id: 280:490
+              x: 858.0
+              y: 662.7999877929688
+              background: '#000000'
+              width: 103.37999725341797
+              height: 44.0
+              children:
+              - type: column
+                id: 280:491
+                x: 858.0
+                y: 662.7999877929688
+                background: '#000000'
+                width: 103.37999725341797
+                height: 24.0
+                children:
+                - type: text
+                  value: Lateral Raises
+                  id: 280:492
+                  x: 858.0
+                  y: 662.7999877929688
+                  size: 16.0
+                  fontWeight: 400
+                  fontFamily: Plus Jakarta Sans
+                  color: '#1A1C1C'
+                  align: left
+              - type: column
+                id: 280:493
+                x: 858.0
+                y: 686.7999877929688
+                background: '#000000'
+                width: 103.37999725341797
+                height: 20.0
+                children:
+                - type: text
+                  value: Deltoids
+                  id: 280:494
+                  x: 858.0
+                  y: 686.7999877929688
+                  size: 14.0
+                  fontWeight: 400
+                  fontFamily: Inter
+                  color: '#94A3B8'
+                  align: left
+          - type: column
+            id: 280:495
+            x: 1048.969970703125
+            y: 667.0499877929688
+            spacing: 0.5
+            background: '#000000'
+            width: 61.029998779296875
+            height: 35.5
+            children:
+            - type: text
+              value: 3 x 12-15
+              id: 280:496
+              x: 1048.969970703125
+              y: 667.0499877929688
+              size: 14.0
+              fontWeight: 700
+              fontFamily: Inter
+              color: '#004AC6'
+              align: right
+            - type: column
+              id: 280:497
+              x: 1048.969970703125
+              y: 687.5499877929688
+              background: '#000000'
+              width: 61.029998779296875
+              height: 15.0
+              children:
+              - type: text
+                value: REPS
+                id: 280:498
+                x: 1084.75
+                y: 687.5499877929688
+                size: 10.0
+                fontWeight: 400
+                fontFamily: Inter
+                color: '#94A3B8'
+                align: right
+    - type: stack
+      id: 280:499
+      x: 777.0
+      y: 737.7999877929688
+      padding: 32.0
+      background: '#000000'
+      width: 350.0
+      height: 190.0
+      children:
+      - type: column
+        id: 280:500
+        x: 777.0
+        y: 737.7999877929688
+        padding: 16.0
+        spacing: 8.0
+        background: '#6CF8BB'
+        radius: 12.0
+        width: 169.0
+        height: 154.0
+        children:
+        - type: icon
+          name: Icon
+          id: 280:501
+          url: assets/icons/icon.svg
+          width: 10.0
+          height: 20.0
+        - type: column
+          id: 280:502
+          x: 794.0
+          y: 782.7999877929688
+          background: '#000000'
+          width: 135.0
+          height: 15.0
+          children:
+          - type: text
+            value: RECOVERY
+            id: 280:503
+            x: 794.0
+            y: 782.7999877929688
+            size: 10.0
+            fontWeight: 400
+            fontFamily: Inter
+            color: '#6CF8BB'
+            align: left
+        - type: column
+          id: 280:504
+          x: 794.0
+          y: 805.7999877929688
+          background: '#000000'
+          width: 135.0
+          height: 28.0
+          children:
+          - type: text
+            value: 94%
+            id: 280:505
+            x: 794.0
+            y: 805.7999877929688
+            size: 18.0
+            fontWeight: 400
+            fontFamily: Plus Jakarta Sans
+            color: '#1A1C1C'
+            align: left
+        - type: column
+          id: 280:506
+          x: 794.0
+          y: 841.7999877929688
+          background: '#000000'
+          width: 135.0
+          height: 33.0
+          children:
+          - type: text
+            value: 'Optimal status for training
+
+              today.'
+            id: 280:507
+            x: 794.0
+            y: 841.7999877929688
+            size: 11.0
+            fontWeight: 400
+            fontFamily: Inter
+            color: '#64748B'
+            align: left
+      - type: column
+        id: 280:508
+        x: 958.0
+        y: 737.7999877929688
+        padding: 16.0
+        spacing: 8.0
+        background: '#FFDBCD'
+        radius: 12.0
+        width: 169.0
+        height: 153.0
+        children:
+        - type: icon
+          name: Icon
+          id: 280:509
+          url: assets/icons/icon.svg
+          width: 16.0
+          height: 19.0
+        - type: column
+          id: 280:510
+          x: 975.0
+          y: 781.7999877929688
+          background: '#000000'
+          width: 135.0
+          height: 15.0
+          children:
+          - type: text
+            value: WEEKLY BURN
+            id: 280:511
+            x: 975.0
+            y: 781.7999877929688
+            size: 10.0
+            fontWeight: 400
+            fontFamily: Inter
+            color: '#943700'
+            align: left
+        - type: column
+          id: 280:512
+          x: 975.0
+          y: 804.7999877929688
+          background: '#000000'
+          width: 135.0
+          height: 28.0
+          children:
+          - type: text
+            value: 2,450
+            id: 280:513
+            x: 975.0
+            y: 804.7999877929688
+            size: 18.0
+            fontWeight: 400
+            fontFamily: Plus Jakarta Sans
+            color: '#1A1C1C'
+            align: left
+        - type: column
+          id: 280:514
+          x: 975.0
+          y: 840.7999877929688
+          background: '#000000'
+          width: 135.0
+          height: 33.0
+          children:
+          - type: text
+            value: 'Active kcal burned this
+
+              week.'
+            id: 280:515
+            x: 975.0
+            y: 840.7999877929688
+            size: 11.0
+            fontWeight: 400
+            fontFamily: Inter
+            color: '#64748B'
+            align: left
+  - type: row
+    id: 280:516
+    x: 757.0
+    y: -171.0
+    padding: 20.0
+    spacing: 176.5800018310547
+    background: '#FBFBFB'
+    width: 390.0
+    height: 64.0
+    children:
+    - type: column
+      id: 280:517
+      x: 777.0
+      y: -160.5
+      background: '#000000'
+      width: 133.4199981689453
+      height: 42.0
+      children:
+      - type: column
+        id: 280:518
+        x: 777.0
+        y: -160.5
+        background: '#000000'
+        width: 133.4199981689453
+        height: 28.0
+        children:
+        - type: text
+          value: Good Morning
+          id: 280:519
+          x: 777.0
+          y: -160.5
+          size: 20.0
+          fontWeight: 700
+          fontFamily: Plus Jakarta Sans
+          color: '#2563EB'
+          align: left
+      - type: stack
+        id: 280:520
+        x: 777.0
+        y: -132.5
+        background: '#000000'
+        width: 133.4199981689453
+        height: 14.0
+        children:
+        - type: column
+          id: 280:521
+          x: 777.0
+          y: -136.5
+          background: '#000000'
+          width: 133.4199981689453
+          height: 18.0
+          children:
+          - type: text
+            value: Let's get to work.
+            id: 280:522
+            x: 777.0
+            y: -136.5
+            size: 12.0
+            fontWeight: 500
+            fontFamily: Inter
+            color: '#64748B'
+            align: left
+    - type: icon
+      name: Button
+      id: 280:523
+      url: assets/icons/button.svg
+      width: 40.0
+      height: 40.0
+  - type: row
+    id: 280:526
+    x: 757.0
+    y: 1017.0
+    padding: 43.1825008392334
+    spacing: 80.69999694824219
+    background: '#FFFFFF'
+    width: 390.0
+    height: 83.0
+    children:
+    - type: column
+      id: 280:527
+      x: 821.3599853515625
+      y: 1030.0
+      spacing: 3.0
+      alignment: center
+      background: '#000000'
+      width: 33.189998626708984
+      height: 38.0
+      children:
+      - type: icon
+        name: Container
+        id: 280:528
+        url: assets/icons/container.svg
+        width: 16.0
+        height: 18.0
+      - type: column
+        id: 280:530
+        x: 821.3599853515625
+        y: 1051.0
+        background: '#000000'
+        width: 33.189998626708984
+        height: 17.0
+        children:
+        - type: text
+          value: Home
+          id: 280:531
+          x: 821.3599853515625
+          y: 1051.0
+          size: 11.0
+          fontWeight: 500
+          fontFamily: Plus Jakarta Sans
+          color: '#2563EB'
+          align: left
+    - type: column
+      id: 280:532
+      x: 935.25
+      y: 1031.0
+      spacing: 3.0
+      alignment: center
+      background: '#000000'
+      width: 30.5
+      height: 36.0
+      children:
+      - type: icon
+        name: Container
+        id: 280:533
+        url: assets/icons/container.svg
+        width: 22.0
+        height: 16.0
+      - type: column
+        id: 280:535
+        x: 935.25
+        y: 1050.0
+        background: '#000000'
+        width: 30.5
+        height: 17.0
+        children:
+        - type: text
+          value: Learn
+          id: 280:536
+          x: 935.25
+          y: 1050.0
+          size: 11.0
+          fontWeight: 500
+          fontFamily: Plus Jakarta Sans
+          color: '#94A3B8'
+          align: left
+    - type: column
+      id: 280:537
+      x: 1046.449951171875
+      y: 1031.0
+      spacing: 3.0
+      alignment: center
+      background: '#000000'
+      width: 36.11000061035156
+      height: 36.0
+      children:
+      - type: icon
+        name: Container
+        id: 280:538
+        url: assets/icons/container.svg
+        width: 16.0
+        height: 16.0
+      - type: column
+        id: 280:540
+        x: 1046.449951171875
+        y: 1050.0
+        background: '#000000'
+        width: 36.11000061035156
+        height: 17.0
+        children:
+        - type: text
+          value: Profile
+          id: 280:541
+          x: 1046.449951171875
+          y: 1050.0
+          size: 11.0
+          fontWeight: 500
+          fontFamily: Plus Jakarta Sans
+          color: '#94A3B8'
+          align: left
