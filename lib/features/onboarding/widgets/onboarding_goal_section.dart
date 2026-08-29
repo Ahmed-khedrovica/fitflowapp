@@ -1,3 +1,4 @@
+import 'package:fitflowapp/core/localization/localization_extension.dart';
 import 'package:fitflowapp/core/theme/app_styles.dart';
 import 'package:fitflowapp/features/onboarding/data/models/onboarding_goal.dart';
 import 'package:fitflowapp/features/onboarding/widgets/onboarding_goal_card.dart';
@@ -15,53 +16,44 @@ class _OnboardingGoalSectionState extends State<OnboardingGoalSection> {
 
   @override
   Widget build(BuildContext context) {
+    final l = context.localize;
+    final goals = [
+      OnboardingGoal(
+        title: l.buildMuscle,
+        description: l.buildMuscleDesc,
+        icon: Icons.fitness_center,
+      ),
+      OnboardingGoal(
+        title: l.getStrong,
+        description: l.getStrongDesc,
+        icon: Icons.bolt,
+      ),
+      OnboardingGoal(
+        title: l.generalFitness,
+        description: l.generalFitnessDesc,
+        icon: Icons.self_improvement,
+      ),
+    ];
+
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       spacing: 0,
       children: [
-        Text('Select Your Goal', style: AppStyles.onboardingTitle),
-        Text(
-          'Customize your journey for precision\nperformance.',
-          style: AppStyles.onboardingSubtitle,
-        ),
+        Text(l.selectYourGoal, style: AppStyles.onboardingTitle),
+        Text(l.goalSubtitle, style: AppStyles.onboardingSubtitle),
         const SizedBox(height: 16),
         Column(
           spacing: 12,
-          children: [
-            GestureDetector(
-              onTap: () => setState(() => _selectedIndex = 0),
+          children: List.generate(
+            goals.length,
+            (index) => GestureDetector(
+              onTap: () => setState(() => _selectedIndex = index),
               child: OnboardingGoalCard(
-                goal: const OnboardingGoal(
-                  title: 'Build Muscle',
-                  description: 'Focus on hypertrophy and\nstrength.',
-                  icon: Icons.fitness_center,
-                ),
-                isSelected: _selectedIndex == 0,
+                goal: goals[index],
+                isSelected: _selectedIndex == index,
               ),
             ),
-            GestureDetector(
-              onTap: () => setState(() => _selectedIndex = 1),
-              child: OnboardingGoalCard(
-                goal: const OnboardingGoal(
-                  title: 'Get Strong',
-                  description: 'Prioritize heavy lifting and power.',
-                  icon: Icons.bolt,
-                ),
-                isSelected: _selectedIndex == 1,
-              ),
-            ),
-            GestureDetector(
-              onTap: () => setState(() => _selectedIndex = 2),
-              child: OnboardingGoalCard(
-                goal: const OnboardingGoal(
-                  title: 'General Fitness',
-                  description: 'Balanced health and mobility.',
-                  icon: Icons.self_improvement,
-                ),
-                isSelected: _selectedIndex == 2,
-              ),
-            ),
-          ],
+          ),
         ),
       ],
     );

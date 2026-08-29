@@ -1,3 +1,4 @@
+import 'package:fitflowapp/core/localization/localization_extension.dart';
 import 'package:fitflowapp/core/theme/app_colors.dart';
 import 'package:fitflowapp/core/theme/app_styles.dart';
 import 'package:flutter/material.dart';
@@ -27,7 +28,10 @@ class OnboardingFooter extends StatelessWidget {
                 mainAxisSize: MainAxisSize.min,
                 spacing: 8,
                 children: [
-                  Text('Continue', style: AppStyles.onboardingContinue),
+                  Text(
+                    context.localize.continueButton,
+                    style: AppStyles.onboardingContinue,
+                  ),
                   const Icon(
                     Icons.arrow_forward,
                     size: 16,
@@ -38,7 +42,7 @@ class OnboardingFooter extends StatelessWidget {
             ),
           ),
           Text(
-            'YOU CAN CHANGE THIS LATER IN PROFILE',
+            context.localize.changeInProfile,
             textAlign: TextAlign.center,
             style: AppStyles.onboardingFooterNote,
           ),
