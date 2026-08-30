@@ -1,32 +1,37 @@
 ---
 name: flutter-feature-data-flow
 description: >
-  Scaffolds the domain and data layers for a FitFlow feature. Creates entities,
-  repository contracts, use-cases, data models, services, and repository
-  implementations using clean architecture. Does NOT touch the presentation
-  layer or create any BLoC/Cubit. Use when preparing the data flow that the
-  presentation layer will later consume.
+  Scaffolds the domain and data layers for a FitFlow feature, then generates
+  one Cubit per use-case (full domain) or one Cubit per repository method
+  (data layer only) to manage loading state. Creates entities, repository
+  contracts, use-cases, data models, services, repository implementations,
+  and Cubits. Does NOT touch screens or widgets.
 ---
 
 # Flutter Feature Data-Flow Skill
 
 ## Overview
 
-This skill sets up the **domain** and **data** layers only.
-It does **not** create any BLoC, Cubit, or presentation-layer code.
+This skill sets up the **domain** and **data** layers, then generates
+**Cubits** to expose that data to the presentation layer.
+It does **not** modify screens or widgets.
 
 Generated structure:
 
 ```
 lib/features/<feature>/
-├── domain/
-│   ├── entities/          ← Pure Dart value objects / enums
-│   ├── repositories/      ← Abstract interface (contract)
-│   └── usecases/          ← One class per action
-└── data/
-    ├── models/            ← DTOs — JSON serialization / mapping
-    ├── services/          ← Platform wrappers (SharedPrefs, HTTP, etc.)
-    └── repositories/      ← Concrete impl of domain interface
+├── domain/                          ← only when "full domain"
+│   ├── entities/
+│   ├── repositories/
+│   └── usecases/
+├── data/
+│   ├── models/
+│   ├── services/
+│   └── repositories/
+└── presentation/
+    └── cubits/
+        ├── <action>_cubit.dart      ← one per use-case / repo method
+        └── <action>_state.dart
 ```
 
 ---
@@ -64,6 +69,14 @@ answers. Do NOT assume or proceed without them.
 - **Yes** → add a `Check<Feature>Status` use-case that returns `bool`.
   (Only applicable when Q2 = full domain.)
 - **No** → skip.
+
+### Q5 — State management style
+> **"Do you want Cubit or BLoC for the presentation state management?"**
+
+- **Cubit** → one `<Action>Cubit` per operation; state is emitted directly by
+  calling a method on the cubit.
+- **BLoC** → one `<Feature>Bloc` that handles all operations through typed
+  events; state is emitted in response to dispatched events.
 
 ---
 
@@ -432,7 +445,374 @@ flutter pub add isar isar_flutter isar_generator
 
 ---
 
-## Step 5 — Verification
+## Step 5 — State Management
+
+Generate presentation-layer state classes based on the user's answer to **Q5**.
+
+### Rule for number of classes
+
+| Q5 answer | Q2 = full domain | Q2 = data layer only |
+|---|---|---|
+| **Cubit** | One `<Action>Cubit` per **use-case** | One `<Action>Cubit` per **repo method** |
+| **BLoC** | One `<Feature>Bloc` covering **all events** | One `<Feature>Bloc` covering **all repo methods** |
+
+---
+
+### State pattern (shared by both Cubit and BLoC)
+
+Each operation gets its own sealed state hierarchy.
+For operations with a return value:
+
+```dart
+sealed class LoadPreferencesState {
+  const LoadPreferencesState();
+}
+
+final class LoadPreferencesInitial extends LoadPreferencesState {
+  const LoadPreferencesInitial();
+}
+
+final class LoadPreferencesLoading extends LoadPreferencesState {
+  const LoadPreferencesLoading();
+}
+
+/// Carries the result on success.
+final class LoadPreferencesLoaded extends LoadPreferencesState {
+  const LoadPreferencesLoaded(this.data);
+  final OnboardingPreferences data; // replace with actual return type
+}
+
+final class LoadPreferencesFailure extends LoadPreferencesState {
+  const LoadPreferencesFailure(this.message);
+  final String message;
+}
+```
+
+> For `void` operations (e.g. save), replace `<Action>Loaded` with
+> `<Action>Success` (no data field).
+
+---
+
+### Option A — Cubit (Q5 = "Cubit")
+
+Files live in `lib/features/<feature>/presentation/cubits/`.
+One pair of files per operation:
+
+```
+cubits/
+├── load_preferences_cubit.dart
+├── load_preferences_state.dart
+├── save_preferences_cubit.dart
+└── save_preferences_state.dart
+```
+
+**With use-case (full domain):**
+
+```dart
+import 'package:flutter_bloc/flutter_bloc.dart';
+import '../../domain/usecases/load_onboarding_preferences.dart';
+import '../../domain/usecases/use_case.dart';
+import 'load_preferences_state.dart';
+
+/// Manages state for the [LoadOnboardingPreferences] use-case.
+final class LoadPreferencesCubit extends Cubit<LoadPreferencesState> {
+  LoadPreferencesCubit(this._useCase)
+      : super(const LoadPreferencesInitial());
+
+  final LoadOnboardingPreferences _useCase;
+
+  Future<void> load() async {
+    emit(const LoadPreferencesLoading());
+    try {
+      final result = await _useCase(const NoParams());
+      emit(
+        result == null
+            ? const LoadPreferencesInitial()
+            : LoadPreferencesLoaded(result),
+      );
+    } catch (e) {
+      emit(LoadPreferencesFailure(e.toString()));
+    }
+  }
+}
+```
+
+**Without use-case (data layer only):**
+
+```dart
+import 'package:flutter_bloc/flutter_bloc.dart';
+import '../../data/repositories/onboarding_repository_impl.dart';
+import 'load_preferences_state.dart';
+
+/// Manages state for loading preferences via [OnboardingRepositoryImpl].
+final class LoadPreferencesCubit extends Cubit<LoadPreferencesState> {
+  LoadPreferencesCubit(this._repository)
+      : super(const LoadPreferencesInitial());
+
+  final OnboardingRepositoryImpl _repository;
+
+  Future<void> load() async {
+    emit(const LoadPreferencesLoading());
+    try {
+      final result = await _repository.loadPreferences();
+      emit(
+        result == null
+            ? const LoadPreferencesInitial()
+            : LoadPreferencesLoaded(result),
+      );
+    } catch (e) {
+      emit(LoadPreferencesFailure(e.toString()));
+    }
+  }
+}
+```
+
+**Naming convention:**
+
+| Method / use-case | Cubit class | State base |
+|---|---|---|
+| `loadPreferences` | `LoadPreferencesCubit` | `LoadPreferencesState` |
+| `savePreferences` | `SavePreferencesCubit` | `SavePreferencesState` |
+| `hasCompletedOnboarding` | `CheckOnboardingStatusCubit` | `CheckOnboardingStatusState` |
+
+Use **verb + noun** derived from the use-case or repository method.
+
+---
+
+### Option B — BLoC (Q5 = "BLoC")
+
+One BLoC per feature. Files live in
+`lib/features/<feature>/presentation/bloc/`.
+
+```
+bloc/
+├── <feature>_bloc.dart
+├── <feature>_event.dart
+└── <feature>_state.dart
+```
+
+**Events** — one sealed subclass per operation:
+
+```dart
+sealed class OnboardingEvent {
+  const OnboardingEvent();
+}
+
+final class LoadPreferencesRequested extends OnboardingEvent {
+  const LoadPreferencesRequested();
+}
+
+final class SavePreferencesRequested extends OnboardingEvent {
+  const SavePreferencesRequested(this.preferences);
+  final OnboardingPreferences preferences;
+}
+```
+
+**State** — a single sealed hierarchy covering all operations:
+
+```dart
+sealed class OnboardingState {
+  const OnboardingState();
+}
+
+final class OnboardingInitial extends OnboardingState {
+  const OnboardingInitial();
+}
+
+final class OnboardingLoading extends OnboardingState {
+  const OnboardingLoading();
+}
+
+final class OnboardingPreferencesLoaded extends OnboardingState {
+  const OnboardingPreferencesLoaded(this.preferences);
+  final OnboardingPreferences preferences;
+}
+
+final class OnboardingPreferencesSaved extends OnboardingState {
+  const OnboardingPreferencesSaved();
+}
+
+final class OnboardingFailure extends OnboardingState {
+  const OnboardingFailure(this.message);
+  final String message;
+}
+```
+
+**BLoC — with use-cases (full domain):**
+
+```dart
+import 'package:flutter_bloc/flutter_bloc.dart';
+import '../../domain/usecases/load_onboarding_preferences.dart';
+import '../../domain/usecases/save_onboarding_preferences.dart';
+import '../../domain/usecases/use_case.dart';
+import 'onboarding_event.dart';
+import 'onboarding_state.dart';
+
+/// Handles all onboarding data operations.
+final class OnboardingBloc extends Bloc<OnboardingEvent, OnboardingState> {
+  OnboardingBloc({
+    required LoadOnboardingPreferences loadPreferences,
+    required SaveOnboardingPreferences savePreferences,
+  })  : _loadPreferences = loadPreferences,
+        _savePreferences = savePreferences,
+        super(const OnboardingInitial()) {
+    on<LoadPreferencesRequested>(_onLoadRequested);
+    on<SavePreferencesRequested>(_onSaveRequested);
+  }
+
+  final LoadOnboardingPreferences _loadPreferences;
+  final SaveOnboardingPreferences _savePreferences;
+
+  Future<void> _onLoadRequested(
+    LoadPreferencesRequested event,
+    Emitter<OnboardingState> emit,
+  ) async {
+    emit(const OnboardingLoading());
+    try {
+      final result = await _loadPreferences(const NoParams());
+      emit(
+        result == null
+            ? const OnboardingInitial()
+            : OnboardingPreferencesLoaded(result),
+      );
+    } catch (e) {
+      emit(OnboardingFailure(e.toString()));
+    }
+  }
+
+  Future<void> _onSaveRequested(
+    SavePreferencesRequested event,
+    Emitter<OnboardingState> emit,
+  ) async {
+    emit(const OnboardingLoading());
+    try {
+      await _savePreferences(event.preferences);
+      emit(const OnboardingPreferencesSaved());
+    } catch (e) {
+      emit(OnboardingFailure(e.toString()));
+    }
+  }
+}
+```
+
+**BLoC — without use-cases (data layer only):**
+Replace each use-case constructor parameter with the repository impl directly
+and call its methods inline inside the handlers.
+
+### State pattern
+
+Every state file uses a **sealed class** with four variants:
+
+```dart
+/// Represents all possible states for the load-preferences operation.
+sealed class LoadPreferencesState {
+  const LoadPreferencesState();
+}
+
+/// Initial state before any operation has been triggered.
+final class LoadPreferencesInitial extends LoadPreferencesState {
+  const LoadPreferencesInitial();
+}
+
+/// Operation is in progress.
+final class LoadPreferencesLoading extends LoadPreferencesState {
+  const LoadPreferencesLoading();
+}
+
+/// Operation completed successfully.
+final class LoadPreferencesLoaded extends LoadPreferencesState {
+  const LoadPreferencesLoaded(this.preferences);
+  final OnboardingPreferences preferences; // replace with actual return type
+}
+
+/// Operation failed.
+final class LoadPreferencesFailure extends LoadPreferencesState {
+  const LoadPreferencesFailure(this.message);
+  final String message;
+}
+```
+
+> For operations that return `void` (e.g. save), omit the `Loaded` data
+> payload and use a `SavePreferencesSuccess` state instead.
+
+### Cubit pattern — with use-case (full domain)
+
+The Cubit receives the use-case via constructor injection.
+
+```dart
+import 'package:flutter_bloc/flutter_bloc.dart';
+import '../../domain/usecases/load_onboarding_preferences.dart';
+import '../../domain/usecases/use_case.dart';
+import 'load_preferences_state.dart';
+
+/// Manages the state for the [LoadOnboardingPreferences] use-case.
+final class LoadPreferencesCubit extends Cubit<LoadPreferencesState> {
+  LoadPreferencesCubit(this._loadPreferences)
+      : super(const LoadPreferencesInitial());
+
+  final LoadOnboardingPreferences _loadPreferences;
+
+  Future<void> load() async {
+    emit(const LoadPreferencesLoading());
+    try {
+      final prefs = await _loadPreferences(const NoParams());
+      if (prefs == null) {
+        emit(const LoadPreferencesInitial());
+      } else {
+        emit(LoadPreferencesLoaded(prefs));
+      }
+    } catch (e) {
+      emit(LoadPreferencesFailure(e.toString()));
+    }
+  }
+}
+```
+
+### Cubit pattern — without use-case (data layer only)
+
+The Cubit receives the repository directly.
+
+```dart
+import 'package:flutter_bloc/flutter_bloc.dart';
+import '../../data/repositories/onboarding_repository_impl.dart';
+import 'load_preferences_state.dart';
+
+/// Manages the state for loading preferences from [OnboardingRepositoryImpl].
+final class LoadPreferencesCubit extends Cubit<LoadPreferencesState> {
+  LoadPreferencesCubit(this._repository)
+      : super(const LoadPreferencesInitial());
+
+  final OnboardingRepositoryImpl _repository;
+
+  Future<void> load() async {
+    emit(const LoadPreferencesLoading());
+    try {
+      final model = await _repository.loadPreferences();
+      if (model == null) {
+        emit(const LoadPreferencesInitial());
+      } else {
+        emit(LoadPreferencesLoaded(model));
+      }
+    } catch (e) {
+      emit(LoadPreferencesFailure(e.toString()));
+    }
+  }
+}
+```
+
+### Naming convention
+
+| Operation | Cubit class | State base class |
+|---|---|---|
+| Load preferences | `LoadPreferencesCubit` | `LoadPreferencesState` |
+| Save preferences | `SavePreferencesCubit` | `SavePreferencesState` |
+| Check onboarding status | `CheckOnboardingStatusCubit` | `CheckOnboardingStatusState` |
+
+Use the **verb + noun** from the use-case or repository method name.
+
+---
+
+## Step 6 — Verification
 
 Run after all files are written:
 
@@ -443,6 +823,7 @@ flutter analyze
 
 Checklist:
 - [ ] `flutter analyze` — zero errors, zero warnings.
+- [ ] Every Cubit transitions through `Loading` → `Loaded` or `Failure`.
 - [ ] Every use-case can be instantiated with a fake repository in a unit test.
 - [ ] Service reads and writes raw data without transformation.
 - [ ] Repository impl correctly maps between model and entity (full domain) or
