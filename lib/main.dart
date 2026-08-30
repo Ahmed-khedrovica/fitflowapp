@@ -9,10 +9,7 @@ import 'package:google_fonts/google_fonts.dart';
 
 void main() {
   runApp(
-    BlocProvider(
-      create: (_) => LanguageCubit(),
-      child: const FitFlowApp(),
-    ),
+    BlocProvider(create: (_) => LanguageCubit(), child: const FitFlowApp()),
   );
 }
 
@@ -41,9 +38,7 @@ class FitFlowApp extends StatelessWidget {
               surface: AppColors.background,
               onSurface: AppColors.onBackground,
             ),
-            textTheme: GoogleFonts.lexendTextTheme(
-              ThemeData.dark().textTheme,
-            ),
+            textTheme: GoogleFonts.lexendTextTheme(ThemeData.dark().textTheme),
           ),
           routerConfig: appRouter,
         );
