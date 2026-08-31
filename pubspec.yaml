@@ -71,6 +71,7 @@ flutter:
   uses-material-design: true
 
   assets:
+    - lib/data/fitflow_goals.json
     - assets/images/app_logo.svg
     - assets/images/onboarding_image.png
     - assets/images/onbooarding_gradient.png

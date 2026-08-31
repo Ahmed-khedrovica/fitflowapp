@@ -1,0 +1,520 @@
+{
+  "exercises": [
+    {
+      "id": "ex_psh",
+      "title": {
+        "en": "Push-Ups",
+        "ar": "بوش أب (ضغط)"
+      },
+      "video_url": "https://storage.googleapis.com/fitflow-vids/pushup.mp4",
+      "thumbnail_url": "https://storage.googleapis.com/fitflow-vids/pushup_thumb.jpg",
+      "equipment": [
+        "bodyweight"
+      ],
+      "muscles": {
+        "primary": [
+          "chest"
+        ],
+        "secondary": [
+          "triceps",
+          "front_delts"
+        ],
+        "stabilizers": [
+          "core"
+        ]
+      },
+      "form_cues": {
+        "en": [
+          "Keep your body in a straight line.",
+          "Keep your core engaged.",
+          "Lower your chest with control.",
+          "Push through your palms to return to the starting position."
+        ],
+        "ar": [
+          "حافظ على جسمك في خط مستقيم.",
+          "حافظ على شد عضلات البطن.",
+          "أنزل صدرك بتحكم.",
+          "ادفع من خلال راحة اليد للعودة إلى وضع البداية."
+        ]
+      }
+    },
+    {
+      "id": "ex_dumbbell_bench_press",
+      "title": {
+        "en": "Dumbbell Bench Press",
+        "ar": "بنش دمبل"
+      },
+      "video_url": "https://storage.googleapis.com/fitflow-vids/dumbbell_bench_press.mp4",
+      "thumbnail_url": "https://storage.googleapis.com/fitflow-vids/dumbbell_bench_press_thumb.jpg",
+      "equipment": [
+        "dumbbell",
+        "bench"
+      ],
+      "muscles": {
+        "primary": [
+          "chest"
+        ],
+        "secondary": [
+          "triceps",
+          "front_delts"
+        ],
+        "stabilizers": []
+      },
+      "form_cues": {
+        "en": [
+          "Keep your shoulder blades retracted.",
+          "Lower the dumbbells with control.",
+          "Keep your wrists neutral.",
+          "Press the dumbbells upward without losing control."
+        ],
+        "ar": [
+          "حافظ على لوحي الكتف للخلف.",
+          "أنزل الدمبل بتحكم.",
+          "حافظ على استقامة الرسغين.",
+          "ادفع الدمبل لأعلى مع الحفاظ على التحكم."
+        ]
+      }
+    },
+    {
+      "id": "ex_seated_cable_row",
+      "title": {
+        "en": "Seated Cable Row",
+        "ar": "سحب كيبل جالس"
+      },
+      "video_url": "https://storage.googleapis.com/fitflow-vids/seated_cable_row.mp4",
+      "thumbnail_url": "https://storage.googleapis.com/fitflow-vids/seated_cable_row_thumb.jpg",
+      "equipment": [
+        "cable"
+      ],
+      "muscles": {
+        "primary": [
+          "upper_back",
+          "lats"
+        ],
+        "secondary": [
+          "biceps",
+          "rear_delts"
+        ],
+        "stabilizers": [
+          "core"
+        ]
+      },
+      "form_cues": {
+        "en": [
+          "Keep your chest up.",
+          "Pull the handle toward your lower ribs.",
+          "Squeeze your shoulder blades together.",
+          "Return slowly to the starting position."
+        ],
+        "ar": [
+          "حافظ على رفع الصدر.",
+          "اسحب المقبض ناحية أسفل القفص الصدري.",
+          "اضغط لوحي الكتف معًا.",
+          "عد ببطء إلى وضع البداية."
+        ]
+      }
+    },
+    {
+      "id": "ex_overhead_press",
+      "title": {
+        "en": "Dumbbell Overhead Press",
+        "ar": "ضغط كتف دمبل"
+      },
+      "video_url": "https://storage.googleapis.com/fitflow-vids/overhead_press.mp4",
+      "thumbnail_url": "https://storage.googleapis.com/fitflow-vids/overhead_press_thumb.jpg",
+      "equipment": [
+        "dumbbell"
+      ],
+      "muscles": {
+        "primary": [
+          "shoulders"
+        ],
+        "secondary": [
+          "triceps",
+          "upper_chest"
+        ],
+        "stabilizers": [
+          "core"
+        ]
+      },
+      "form_cues": {
+        "en": [
+          "Keep your core braced.",
+          "Start with the dumbbells around shoulder height.",
+          "Press overhead without excessive back arching.",
+          "Lower the dumbbells under control."
+        ],
+        "ar": [
+          "حافظ على شد عضلات البطن.",
+          "ابدأ والدمبلز عند مستوى الكتفين.",
+          "ادفع لأعلى بدون تقويس زائد للظهر.",
+          "أنزل الدمبلز بتحكم."
+        ]
+      }
+    },
+    {
+      "id": "ex_lateral_raise",
+      "title": {
+        "en": "Dumbbell Lateral Raise",
+        "ar": "رفرفة جانبي دمبل"
+      },
+      "video_url": "https://storage.googleapis.com/fitflow-vids/lateral_raise.mp4",
+      "thumbnail_url": "https://storage.googleapis.com/fitflow-vids/lateral_raise_thumb.jpg",
+      "equipment": [
+        "dumbbell"
+      ],
+      "muscles": {
+        "primary": [
+          "side_delts"
+        ],
+        "secondary": [],
+        "stabilizers": [
+          "core"
+        ]
+      },
+      "form_cues": {
+        "en": [
+          "Keep a slight bend in your elbows.",
+          "Raise the dumbbells to about shoulder height.",
+          "Avoid swinging your body.",
+          "Lower the dumbbells slowly."
+        ],
+        "ar": [
+          "حافظ على انحناء بسيط في المرفقين.",
+          "ارفع الدمبلز إلى مستوى الكتفين تقريبًا.",
+          "تجنب تحريك الجسم بعنف.",
+          "أنزل الدمبلز ببطء."
+        ]
+      }
+    },
+    {
+      "id": "ex_lat_pulldown",
+      "title": {
+        "en": "Lat Pulldown",
+        "ar": "سحب أمامي"
+      },
+      "video_url": "https://storage.googleapis.com/fitflow-vids/lat_pulldown.mp4",
+      "thumbnail_url": "https://storage.googleapis.com/fitflow-vids/lat_pulldown_thumb.jpg",
+      "equipment": [
+        "cable"
+      ],
+      "muscles": {
+        "primary": [
+          "lats"
+        ],
+        "secondary": [
+          "biceps",
+          "upper_back"
+        ],
+        "stabilizers": [
+          "core"
+        ]
+      },
+      "form_cues": {
+        "en": [
+          "Keep your chest lifted.",
+          "Pull the bar toward your upper chest.",
+          "Drive your elbows down.",
+          "Control the bar on the way up."
+        ],
+        "ar": [
+          "حافظ على رفع الصدر.",
+          "اسحب البار ناحية أعلى الصدر.",
+          "وجه المرفقين لأسفل.",
+          "تحكم في البار أثناء عودته لأعلى."
+        ]
+      }
+    },
+    {
+      "id": "ex_barbell_squat",
+      "title": {
+        "en": "Barbell Squat",
+        "ar": "سكوات بالبار"
+      },
+      "video_url": "https://storage.googleapis.com/fitflow-vids/barbell_squat.mp4",
+      "thumbnail_url": "https://storage.googleapis.com/fitflow-vids/barbell_squat_thumb.jpg",
+      "equipment": [
+        "barbell",
+        "rack"
+      ],
+      "muscles": {
+        "primary": [
+          "quads",
+          "glutes"
+        ],
+        "secondary": [
+          "hamstrings",
+          "adductors"
+        ],
+        "stabilizers": [
+          "core"
+        ]
+      },
+      "form_cues": {
+        "en": [
+          "Brace your core before descending.",
+          "Keep your knees tracking over your toes.",
+          "Descend with control.",
+          "Drive through your feet to stand."
+        ],
+        "ar": [
+          "شد عضلات البطن قبل النزول.",
+          "حافظ على اتجاه الركبتين مع اتجاه أصابع القدم.",
+          "انزل بتحكم.",
+          "ادفع من خلال القدمين للوقوف."
+        ]
+      }
+    },
+    {
+      "id": "ex_leg_press",
+      "title": {
+        "en": "Leg Press",
+        "ar": "ليج برس"
+      },
+      "video_url": "https://storage.googleapis.com/fitflow-vids/leg_press.mp4",
+      "thumbnail_url": "https://storage.googleapis.com/fitflow-vids/leg_press_thumb.jpg",
+      "equipment": [
+        "machine"
+      ],
+      "muscles": {
+        "primary": [
+          "quads",
+          "glutes"
+        ],
+        "secondary": [
+          "hamstrings"
+        ],
+        "stabilizers": []
+      },
+      "form_cues": {
+        "en": [
+          "Keep your lower back supported.",
+          "Lower the platform under control.",
+          "Keep your knees aligned with your toes.",
+          "Push through your feet without locking your knees."
+        ],
+        "ar": [
+          "حافظ على دعم أسفل الظهر.",
+          "أنزل المنصة بتحكم.",
+          "حافظ على محاذاة الركبتين مع أصابع القدم.",
+          "ادفع بالقدمين بدون قفل الركبتين."
+        ]
+      }
+    },
+    {
+      "id": "ex_romanian_deadlift",
+      "title": {
+        "en": "Romanian Deadlift",
+        "ar": "رومانيان ديدليفت"
+      },
+      "video_url": "https://storage.googleapis.com/fitflow-vids/romanian_deadlift.mp4",
+      "thumbnail_url": "https://storage.googleapis.com/fitflow-vids/romanian_deadlift_thumb.jpg",
+      "equipment": [
+        "barbell"
+      ],
+      "muscles": {
+        "primary": [
+          "hamstrings",
+          "glutes"
+        ],
+        "secondary": [
+          "lower_back"
+        ],
+        "stabilizers": [
+          "core",
+          "grip"
+        ]
+      },
+      "form_cues": {
+        "en": [
+          "Keep the bar close to your legs.",
+          "Push your hips back while keeping your back neutral.",
+          "Feel the stretch in your hamstrings.",
+          "Drive your hips forward to stand."
+        ],
+        "ar": [
+          "حافظ على البار قريبًا من الرجلين.",
+          "ادفع الحوض للخلف مع الحفاظ على الظهر محايدًا.",
+          "اشعر بتمدد عضلات الخلفية.",
+          "ادفع الحوض للأمام للوقوف."
+        ]
+      }
+    },
+    {
+      "id": "ex_leg_curl",
+      "title": {
+        "en": "Seated Leg Curl",
+        "ar": "ليج كيرل جالس"
+      },
+      "video_url": "https://storage.googleapis.com/fitflow-vids/leg_curl.mp4",
+      "thumbnail_url": "https://storage.googleapis.com/fitflow-vids/leg_curl_thumb.jpg",
+      "equipment": [
+        "machine"
+      ],
+      "muscles": {
+        "primary": [
+          "hamstrings"
+        ],
+        "secondary": [
+          "calves"
+        ],
+        "stabilizers": []
+      },
+      "form_cues": {
+        "en": [
+          "Keep your hips against the pad.",
+          "Curl the weight smoothly.",
+          "Pause briefly at the contracted position.",
+          "Return slowly."
+        ],
+        "ar": [
+          "حافظ على ثبات الحوض على المقعد.",
+          "اثنِ الركبتين بسلاسة.",
+          "توقف لحظة عند الانقباض.",
+          "عد ببطء."
+        ]
+      }
+    },
+    {
+      "id": "ex_calf_raise",
+      "title": {
+        "en": "Standing Calf Raise",
+        "ar": "رفع سمانة واقف"
+      },
+      "video_url": "https://storage.googleapis.com/fitflow-vids/calf_raise.mp4",
+      "thumbnail_url": "https://storage.googleapis.com/fitflow-vids/calf_raise_thumb.jpg",
+      "equipment": [
+        "machine"
+      ],
+      "muscles": {
+        "primary": [
+          "calves"
+        ],
+        "secondary": [],
+        "stabilizers": []
+      },
+      "form_cues": {
+        "en": [
+          "Use a full range of motion.",
+          "Rise onto your toes without bouncing.",
+          "Pause at the top.",
+          "Lower your heels under control."
+        ],
+        "ar": [
+          "استخدم مدى حركة كامل.",
+          "ارفع نفسك على أطراف الأصابع بدون ارتداد.",
+          "توقف في الأعلى.",
+          "أنزل الكعبين بتحكم."
+        ]
+      }
+    },
+    {
+      "id": "ex_dumbbell_curl",
+      "title": {
+        "en": "Dumbbell Curl",
+        "ar": "باي دمبل"
+      },
+      "video_url": "https://storage.googleapis.com/fitflow-vids/dumbbell_curl.mp4",
+      "thumbnail_url": "https://storage.googleapis.com/fitflow-vids/dumbbell_curl_thumb.jpg",
+      "equipment": [
+        "dumbbell"
+      ],
+      "muscles": {
+        "primary": [
+          "biceps"
+        ],
+        "secondary": [
+          "forearms"
+        ],
+        "stabilizers": []
+      },
+      "form_cues": {
+        "en": [
+          "Keep your elbows close to your sides.",
+          "Curl without swinging.",
+          "Squeeze your biceps at the top.",
+          "Lower the dumbbells slowly."
+        ],
+        "ar": [
+          "حافظ على المرفقين قريبين من الجسم.",
+          "اثنِ الذراع بدون تأرجح.",
+          "اضغط عضلات البايسبس في الأعلى.",
+          "أنزل الدمبلز ببطء."
+        ]
+      }
+    },
+    {
+      "id": "ex_triceps_pushdown",
+      "title": {
+        "en": "Cable Triceps Pushdown",
+        "ar": "ترايسبس كيبل"
+      },
+      "video_url": "https://storage.googleapis.com/fitflow-vids/triceps_pushdown.mp4",
+      "thumbnail_url": "https://storage.googleapis.com/fitflow-vids/triceps_pushdown_thumb.jpg",
+      "equipment": [
+        "cable"
+      ],
+      "muscles": {
+        "primary": [
+          "triceps"
+        ],
+        "secondary": [],
+        "stabilizers": [
+          "core"
+        ]
+      },
+      "form_cues": {
+        "en": [
+          "Keep your elbows close to your body.",
+          "Push the handle down until your arms are extended.",
+          "Avoid moving your shoulders.",
+          "Return under control."
+        ],
+        "ar": [
+          "حافظ على المرفقين قريبين من الجسم.",
+          "ادفع المقبض لأسفل حتى تمتد الذراعان.",
+          "تجنب تحريك الكتفين.",
+          "عد بتحكم."
+        ]
+      }
+    },
+    {
+      "id": "ex_goblet_squat",
+      "title": {
+        "en": "Dumbbell Goblet Squat",
+        "ar": "جوبلت سكوات دمبل"
+      },
+      "video_url": "https://storage.googleapis.com/fitflow-vids/goblet_squat.mp4",
+      "thumbnail_url": "https://storage.googleapis.com/fitflow-vids/goblet_squat_thumb.jpg",
+      "equipment": [
+        "dumbbell"
+      ],
+      "muscles": {
+        "primary": [
+          "quads",
+          "glutes"
+        ],
+        "secondary": [
+          "hamstrings"
+        ],
+        "stabilizers": [
+          "core"
+        ]
+      },
+      "form_cues": {
+        "en": [
+          "Hold the dumbbell close to your chest.",
+          "Keep your chest upright.",
+          "Lower under control.",
+          "Drive through your feet to stand."
+        ],
+        "ar": [
+          "أمسك الدمبل قريبًا من صدرك.",
+          "حافظ على استقامة الصدر.",
+          "انزل بتحكم.",
+          "ادفع من خلال القدمين للوقوف."
+        ]
+      }
+    }
+  ]
+}

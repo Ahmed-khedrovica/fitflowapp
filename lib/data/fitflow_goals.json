@@ -1,0 +1,40 @@
+{
+  "goals": [
+    {
+      "id": "build_muscle",
+      "title": {
+        "en": "Build Muscle",
+        "ar": "بناء العضلات"
+      },
+      "description": {
+        "en": "Focus on hypertrophy and building lean muscle.",
+        "ar": "التركيز على تضخيم العضلات وبناء الكتلة العضلية."
+      },
+      "icon": "muscle"
+    },
+    {
+      "id": "get_strong",
+      "title": {
+        "en": "Get Strong",
+        "ar": "زيادة القوة"
+      },
+      "description": {
+        "en": "Prioritize strength, power, and progressive overload.",
+        "ar": "التركيز على القوة والقدرة وزيادة الأوزان تدريجيًا."
+      },
+      "icon": "bolt"
+    },
+    {
+      "id": "general_fitness",
+      "title": {
+        "en": "General Fitness",
+        "ar": "اللياقة العامة"
+      },
+      "description": {
+        "en": "Build balanced fitness, conditioning, and mobility.",
+        "ar": "تحسين اللياقة البدنية والتكييف والحركة بشكل متوازن."
+      },
+      "icon": "fitness"
+    }
+  ]
+}

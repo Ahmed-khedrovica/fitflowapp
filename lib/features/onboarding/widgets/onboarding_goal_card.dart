@@ -7,14 +7,18 @@ class OnboardingGoalCard extends StatelessWidget {
   const OnboardingGoalCard({
     super.key,
     required this.goal,
+    required this.languageCode,
     required this.isSelected,
   });
 
   final OnboardingGoal goal;
+  final String languageCode;
   final bool isSelected;
 
   @override
   Widget build(BuildContext context) {
+    final icon = _iconForGoal(goal);
+
     return Container(
       padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(
@@ -35,15 +39,21 @@ class OnboardingGoalCard extends StatelessWidget {
               color: AppColors.surfaceMuted,
               borderRadius: BorderRadius.circular(12),
             ),
-            child: Icon(goal.icon, size: 24, color: AppColors.primary),
+            child: Icon(icon, size: 24, color: AppColors.primary),
           ),
           Expanded(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               spacing: 2,
               children: [
-                Text(goal.title, style: AppStyles.onboardingGoalTitle),
-                Text(goal.description, style: AppStyles.onboardingGoalDescription),
+                Text(
+                  goal.localizedTitle(languageCode),
+                  style: AppStyles.onboardingGoalTitle,
+                ),
+                Text(
+                  goal.localizedDescription(languageCode),
+                  style: AppStyles.onboardingGoalDescription,
+                ),
               ],
             ),
           ),
@@ -55,5 +65,14 @@ class OnboardingGoalCard extends StatelessWidget {
         ],
       ),
     );
+  }
+
+  IconData _iconForGoal(OnboardingGoal goal) {
+    return switch (goal.id) {
+      'build_muscle' => Icons.fitness_center,
+      'get_strong' => Icons.bolt,
+      'general_fitness' => Icons.self_improvement,
+      _ => Icons.flag,
+    };
   }
 }

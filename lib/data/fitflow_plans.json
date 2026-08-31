@@ -1,0 +1,1546 @@
+{
+  "plans": [
+    {
+      "plan_id": "plan_build_muscle_2d",
+      "goal_id": "build_muscle",
+      "availability_days": 2,
+      "level": "intermediate",
+      "schedule_notes": {
+        "en": "Rest as needed between sessions and prioritize recovery.",
+        "ar": "خذ أيام راحة كافية بين الجلسات واهتم بالتعافي."
+      },
+      "workout_days": [
+        {
+          "day_number": 1,
+          "workout_id": "workout_build_muscle_2d_1",
+          "title": {
+            "en": "Full Body A",
+            "ar": "Full Body A"
+          },
+          "duration_minutes": 50,
+          "exercises": [
+            {
+              "exercise_id": "ex_barbell_squat",
+              "sets": 3,
+              "reps": "8-10",
+              "rest_seconds": 150
+            },
+            {
+              "exercise_id": "ex_dumbbell_bench_press",
+              "sets": 3,
+              "reps": "8-12",
+              "rest_seconds": 120
+            },
+            {
+              "exercise_id": "ex_seated_cable_row",
+              "sets": 3,
+              "reps": "8-12",
+              "rest_seconds": 120
+            },
+            {
+              "exercise_id": "ex_dumbbell_curl",
+              "sets": 2,
+              "reps": "10-15",
+              "rest_seconds": 75
+            }
+          ]
+        },
+        {
+          "day_number": 2,
+          "workout_id": "workout_build_muscle_2d_2",
+          "title": {
+            "en": "Full Body B",
+            "ar": "Full Body B"
+          },
+          "duration_minutes": 50,
+          "exercises": [
+            {
+              "exercise_id": "ex_romanian_deadlift",
+              "sets": 3,
+              "reps": "8-10",
+              "rest_seconds": 150
+            },
+            {
+              "exercise_id": "ex_overhead_press",
+              "sets": 3,
+              "reps": "8-12",
+              "rest_seconds": 120
+            },
+            {
+              "exercise_id": "ex_lat_pulldown",
+              "sets": 3,
+              "reps": "8-12",
+              "rest_seconds": 120
+            },
+            {
+              "exercise_id": "ex_triceps_pushdown",
+              "sets": 2,
+              "reps": "10-15",
+              "rest_seconds": 75
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "plan_id": "plan_build_muscle_3d",
+      "goal_id": "build_muscle",
+      "availability_days": 3,
+      "level": "intermediate",
+      "schedule_notes": {
+        "en": "Rest as needed between sessions and prioritize recovery.",
+        "ar": "خذ أيام راحة كافية بين الجلسات واهتم بالتعافي."
+      },
+      "workout_days": [
+        {
+          "day_number": 1,
+          "workout_id": "workout_build_muscle_3d_1",
+          "title": {
+            "en": "Upper Body",
+            "ar": "Upper Body"
+          },
+          "duration_minutes": 50,
+          "exercises": [
+            {
+              "exercise_id": "ex_dumbbell_bench_press",
+              "sets": 3,
+              "reps": "8-12",
+              "rest_seconds": 120
+            },
+            {
+              "exercise_id": "ex_seated_cable_row",
+              "sets": 3,
+              "reps": "8-12",
+              "rest_seconds": 120
+            },
+            {
+              "exercise_id": "ex_overhead_press",
+              "sets": 3,
+              "reps": "8-12",
+              "rest_seconds": 120
+            },
+            {
+              "exercise_id": "ex_lat_pulldown",
+              "sets": 3,
+              "reps": "10-12",
+              "rest_seconds": 90
+            },
+            {
+              "exercise_id": "ex_lateral_raise",
+              "sets": 3,
+              "reps": "12-15",
+              "rest_seconds": 60
+            }
+          ]
+        },
+        {
+          "day_number": 2,
+          "workout_id": "workout_build_muscle_3d_2",
+          "title": {
+            "en": "Lower Body",
+            "ar": "Lower Body"
+          },
+          "duration_minutes": 50,
+          "exercises": [
+            {
+              "exercise_id": "ex_barbell_squat",
+              "sets": 3,
+              "reps": "8-10",
+              "rest_seconds": 150
+            },
+            {
+              "exercise_id": "ex_romanian_deadlift",
+              "sets": 3,
+              "reps": "8-10",
+              "rest_seconds": 150
+            },
+            {
+              "exercise_id": "ex_leg_press",
+              "sets": 3,
+              "reps": "10-12",
+              "rest_seconds": 120
+            },
+            {
+              "exercise_id": "ex_leg_curl",
+              "sets": 3,
+              "reps": "10-15",
+              "rest_seconds": 90
+            },
+            {
+              "exercise_id": "ex_calf_raise",
+              "sets": 3,
+              "reps": "12-15",
+              "rest_seconds": 60
+            }
+          ]
+        },
+        {
+          "day_number": 3,
+          "workout_id": "workout_build_muscle_3d_3",
+          "title": {
+            "en": "Full Body",
+            "ar": "Full Body"
+          },
+          "duration_minutes": 50,
+          "exercises": [
+            {
+              "exercise_id": "ex_goblet_squat",
+              "sets": 3,
+              "reps": "10-12",
+              "rest_seconds": 120
+            },
+            {
+              "exercise_id": "ex_dumbbell_bench_press",
+              "sets": 3,
+              "reps": "8-12",
+              "rest_seconds": 120
+            },
+            {
+              "exercise_id": "ex_lat_pulldown",
+              "sets": 3,
+              "reps": "10-12",
+              "rest_seconds": 90
+            },
+            {
+              "exercise_id": "ex_dumbbell_curl",
+              "sets": 2,
+              "reps": "10-15",
+              "rest_seconds": 75
+            },
+            {
+              "exercise_id": "ex_triceps_pushdown",
+              "sets": 2,
+              "reps": "10-15",
+              "rest_seconds": 75
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "plan_id": "plan_build_muscle_4d",
+      "goal_id": "build_muscle",
+      "availability_days": 4,
+      "level": "intermediate",
+      "schedule_notes": {
+        "en": "Rest as needed between sessions and prioritize recovery.",
+        "ar": "خذ أيام راحة كافية بين الجلسات واهتم بالتعافي."
+      },
+      "workout_days": [
+        {
+          "day_number": 1,
+          "workout_id": "workout_build_muscle_4d_1",
+          "title": {
+            "en": "Upper A",
+            "ar": "Upper A"
+          },
+          "duration_minutes": 50,
+          "exercises": [
+            {
+              "exercise_id": "ex_dumbbell_bench_press",
+              "sets": 3,
+              "reps": "8-12",
+              "rest_seconds": 120
+            },
+            {
+              "exercise_id": "ex_seated_cable_row",
+              "sets": 3,
+              "reps": "8-12",
+              "rest_seconds": 120
+            },
+            {
+              "exercise_id": "ex_overhead_press",
+              "sets": 3,
+              "reps": "8-12",
+              "rest_seconds": 120
+            },
+            {
+              "exercise_id": "ex_lateral_raise",
+              "sets": 3,
+              "reps": "12-15",
+              "rest_seconds": 60
+            }
+          ]
+        },
+        {
+          "day_number": 2,
+          "workout_id": "workout_build_muscle_4d_2",
+          "title": {
+            "en": "Lower A",
+            "ar": "Lower A"
+          },
+          "duration_minutes": 50,
+          "exercises": [
+            {
+              "exercise_id": "ex_barbell_squat",
+              "sets": 3,
+              "reps": "8-10",
+              "rest_seconds": 150
+            },
+            {
+              "exercise_id": "ex_romanian_deadlift",
+              "sets": 3,
+              "reps": "8-10",
+              "rest_seconds": 150
+            },
+            {
+              "exercise_id": "ex_leg_curl",
+              "sets": 3,
+              "reps": "10-15",
+              "rest_seconds": 90
+            },
+            {
+              "exercise_id": "ex_calf_raise",
+              "sets": 3,
+              "reps": "12-15",
+              "rest_seconds": 60
+            }
+          ]
+        },
+        {
+          "day_number": 3,
+          "workout_id": "workout_build_muscle_4d_3",
+          "title": {
+            "en": "Upper B",
+            "ar": "Upper B"
+          },
+          "duration_minutes": 50,
+          "exercises": [
+            {
+              "exercise_id": "ex_lat_pulldown",
+              "sets": 3,
+              "reps": "8-12",
+              "rest_seconds": 120
+            },
+            {
+              "exercise_id": "ex_dumbbell_bench_press",
+              "sets": 3,
+              "reps": "10-12",
+              "rest_seconds": 120
+            },
+            {
+              "exercise_id": "ex_seated_cable_row",
+              "sets": 3,
+              "reps": "10-12",
+              "rest_seconds": 90
+            },
+            {
+              "exercise_id": "ex_dumbbell_curl",
+              "sets": 3,
+              "reps": "10-15",
+              "rest_seconds": 75
+            },
+            {
+              "exercise_id": "ex_triceps_pushdown",
+              "sets": 3,
+              "reps": "10-15",
+              "rest_seconds": 75
+            }
+          ]
+        },
+        {
+          "day_number": 4,
+          "workout_id": "workout_build_muscle_4d_4",
+          "title": {
+            "en": "Lower B",
+            "ar": "Lower B"
+          },
+          "duration_minutes": 50,
+          "exercises": [
+            {
+              "exercise_id": "ex_leg_press",
+              "sets": 3,
+              "reps": "10-12",
+              "rest_seconds": 120
+            },
+            {
+              "exercise_id": "ex_goblet_squat",
+              "sets": 3,
+              "reps": "10-15",
+              "rest_seconds": 90
+            },
+            {
+              "exercise_id": "ex_romanian_deadlift",
+              "sets": 3,
+              "reps": "10-12",
+              "rest_seconds": 120
+            },
+            {
+              "exercise_id": "ex_leg_curl",
+              "sets": 3,
+              "reps": "10-15",
+              "rest_seconds": 90
+            },
+            {
+              "exercise_id": "ex_calf_raise",
+              "sets": 3,
+              "reps": "12-15",
+              "rest_seconds": 60
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "plan_id": "plan_build_muscle_5d",
+      "goal_id": "build_muscle",
+      "availability_days": 5,
+      "level": "intermediate",
+      "schedule_notes": {
+        "en": "Rest as needed between sessions and prioritize recovery.",
+        "ar": "خذ أيام راحة كافية بين الجلسات واهتم بالتعافي."
+      },
+      "workout_days": [
+        {
+          "day_number": 1,
+          "workout_id": "workout_build_muscle_5d_1",
+          "title": {
+            "en": "Chest & Triceps",
+            "ar": "Chest & Triceps"
+          },
+          "duration_minutes": 50,
+          "exercises": [
+            {
+              "exercise_id": "ex_dumbbell_bench_press",
+              "sets": 4,
+              "reps": "8-12",
+              "rest_seconds": 120
+            },
+            {
+              "exercise_id": "ex_psh",
+              "sets": 3,
+              "reps": "10-20",
+              "rest_seconds": 75
+            },
+            {
+              "exercise_id": "ex_overhead_press",
+              "sets": 3,
+              "reps": "8-12",
+              "rest_seconds": 120
+            },
+            {
+              "exercise_id": "ex_triceps_pushdown",
+              "sets": 3,
+              "reps": "10-15",
+              "rest_seconds": 75
+            }
+          ]
+        },
+        {
+          "day_number": 2,
+          "workout_id": "workout_build_muscle_5d_2",
+          "title": {
+            "en": "Back & Biceps",
+            "ar": "Back & Biceps"
+          },
+          "duration_minutes": 50,
+          "exercises": [
+            {
+              "exercise_id": "ex_lat_pulldown",
+              "sets": 4,
+              "reps": "8-12",
+              "rest_seconds": 120
+            },
+            {
+              "exercise_id": "ex_seated_cable_row",
+              "sets": 3,
+              "reps": "8-12",
+              "rest_seconds": 120
+            },
+            {
+              "exercise_id": "ex_dumbbell_curl",
+              "sets": 3,
+              "reps": "10-15",
+              "rest_seconds": 75
+            }
+          ]
+        },
+        {
+          "day_number": 3,
+          "workout_id": "workout_build_muscle_5d_3",
+          "title": {
+            "en": "Legs",
+            "ar": "Legs"
+          },
+          "duration_minutes": 50,
+          "exercises": [
+            {
+              "exercise_id": "ex_barbell_squat",
+              "sets": 4,
+              "reps": "6-10",
+              "rest_seconds": 150
+            },
+            {
+              "exercise_id": "ex_romanian_deadlift",
+              "sets": 3,
+              "reps": "8-10",
+              "rest_seconds": 150
+            },
+            {
+              "exercise_id": "ex_leg_press",
+              "sets": 3,
+              "reps": "10-12",
+              "rest_seconds": 120
+            },
+            {
+              "exercise_id": "ex_leg_curl",
+              "sets": 3,
+              "reps": "10-15",
+              "rest_seconds": 90
+            },
+            {
+              "exercise_id": "ex_calf_raise",
+              "sets": 3,
+              "reps": "12-15",
+              "rest_seconds": 60
+            }
+          ]
+        },
+        {
+          "day_number": 4,
+          "workout_id": "workout_build_muscle_5d_4",
+          "title": {
+            "en": "Shoulders & Arms",
+            "ar": "Shoulders & Arms"
+          },
+          "duration_minutes": 50,
+          "exercises": [
+            {
+              "exercise_id": "ex_overhead_press",
+              "sets": 3,
+              "reps": "8-12",
+              "rest_seconds": 120
+            },
+            {
+              "exercise_id": "ex_lateral_raise",
+              "sets": 4,
+              "reps": "12-15",
+              "rest_seconds": 60
+            },
+            {
+              "exercise_id": "ex_dumbbell_curl",
+              "sets": 3,
+              "reps": "10-15",
+              "rest_seconds": 75
+            },
+            {
+              "exercise_id": "ex_triceps_pushdown",
+              "sets": 3,
+              "reps": "10-15",
+              "rest_seconds": 75
+            }
+          ]
+        },
+        {
+          "day_number": 5,
+          "workout_id": "workout_build_muscle_5d_5",
+          "title": {
+            "en": "Full Body",
+            "ar": "Full Body"
+          },
+          "duration_minutes": 50,
+          "exercises": [
+            {
+              "exercise_id": "ex_goblet_squat",
+              "sets": 3,
+              "reps": "10-12",
+              "rest_seconds": 90
+            },
+            {
+              "exercise_id": "ex_dumbbell_bench_press",
+              "sets": 3,
+              "reps": "10-12",
+              "rest_seconds": 120
+            },
+            {
+              "exercise_id": "ex_lat_pulldown",
+              "sets": 3,
+              "reps": "10-12",
+              "rest_seconds": 90
+            },
+            {
+              "exercise_id": "ex_romanian_deadlift",
+              "sets": 2,
+              "reps": "10-12",
+              "rest_seconds": 120
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "plan_id": "plan_get_strong_2d",
+      "goal_id": "get_strong",
+      "availability_days": 2,
+      "level": "intermediate",
+      "schedule_notes": {
+        "en": "Rest as needed between sessions and prioritize recovery.",
+        "ar": "خذ أيام راحة كافية بين الجلسات واهتم بالتعافي."
+      },
+      "workout_days": [
+        {
+          "day_number": 1,
+          "workout_id": "workout_get_strong_2d_1",
+          "title": {
+            "en": "Full Body Strength A",
+            "ar": "Full Body Strength A"
+          },
+          "duration_minutes": 50,
+          "exercises": [
+            {
+              "exercise_id": "ex_barbell_squat",
+              "sets": 4,
+              "reps": "4-6",
+              "rest_seconds": 180
+            },
+            {
+              "exercise_id": "ex_dumbbell_bench_press",
+              "sets": 4,
+              "reps": "4-6",
+              "rest_seconds": 180
+            },
+            {
+              "exercise_id": "ex_seated_cable_row",
+              "sets": 3,
+              "reps": "6-8",
+              "rest_seconds": 150
+            }
+          ]
+        },
+        {
+          "day_number": 2,
+          "workout_id": "workout_get_strong_2d_2",
+          "title": {
+            "en": "Full Body Strength B",
+            "ar": "Full Body Strength B"
+          },
+          "duration_minutes": 50,
+          "exercises": [
+            {
+              "exercise_id": "ex_romanian_deadlift",
+              "sets": 4,
+              "reps": "5-6",
+              "rest_seconds": 180
+            },
+            {
+              "exercise_id": "ex_overhead_press",
+              "sets": 4,
+              "reps": "4-6",
+              "rest_seconds": 180
+            },
+            {
+              "exercise_id": "ex_lat_pulldown",
+              "sets": 3,
+              "reps": "6-8",
+              "rest_seconds": 150
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "plan_id": "plan_get_strong_3d",
+      "goal_id": "get_strong",
+      "availability_days": 3,
+      "level": "intermediate",
+      "schedule_notes": {
+        "en": "Rest as needed between sessions and prioritize recovery.",
+        "ar": "خذ أيام راحة كافية بين الجلسات واهتم بالتعافي."
+      },
+      "workout_days": [
+        {
+          "day_number": 1,
+          "workout_id": "workout_get_strong_3d_1",
+          "title": {
+            "en": "Upper Strength",
+            "ar": "Upper Strength"
+          },
+          "duration_minutes": 50,
+          "exercises": [
+            {
+              "exercise_id": "ex_dumbbell_bench_press",
+              "sets": 4,
+              "reps": "4-6",
+              "rest_seconds": 180
+            },
+            {
+              "exercise_id": "ex_seated_cable_row",
+              "sets": 4,
+              "reps": "5-8",
+              "rest_seconds": 150
+            },
+            {
+              "exercise_id": "ex_overhead_press",
+              "sets": 3,
+              "reps": "5-7",
+              "rest_seconds": 150
+            },
+            {
+              "exercise_id": "ex_lat_pulldown",
+              "sets": 3,
+              "reps": "6-8",
+              "rest_seconds": 120
+            }
+          ]
+        },
+        {
+          "day_number": 2,
+          "workout_id": "workout_get_strong_3d_2",
+          "title": {
+            "en": "Lower Strength",
+            "ar": "Lower Strength"
+          },
+          "duration_minutes": 50,
+          "exercises": [
+            {
+              "exercise_id": "ex_barbell_squat",
+              "sets": 4,
+              "reps": "4-6",
+              "rest_seconds": 180
+            },
+            {
+              "exercise_id": "ex_romanian_deadlift",
+              "sets": 3,
+              "reps": "5-7",
+              "rest_seconds": 180
+            },
+            {
+              "exercise_id": "ex_leg_press",
+              "sets": 3,
+              "reps": "6-8",
+              "rest_seconds": 150
+            }
+          ]
+        },
+        {
+          "day_number": 3,
+          "workout_id": "workout_get_strong_3d_3",
+          "title": {
+            "en": "Full Body Strength",
+            "ar": "Full Body Strength"
+          },
+          "duration_minutes": 50,
+          "exercises": [
+            {
+              "exercise_id": "ex_goblet_squat",
+              "sets": 3,
+              "reps": "6-8",
+              "rest_seconds": 150
+            },
+            {
+              "exercise_id": "ex_dumbbell_bench_press",
+              "sets": 3,
+              "reps": "5-7",
+              "rest_seconds": 180
+            },
+            {
+              "exercise_id": "ex_lat_pulldown",
+              "sets": 3,
+              "reps": "6-8",
+              "rest_seconds": 120
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "plan_id": "plan_get_strong_4d",
+      "goal_id": "get_strong",
+      "availability_days": 4,
+      "level": "intermediate",
+      "schedule_notes": {
+        "en": "Rest as needed between sessions and prioritize recovery.",
+        "ar": "خذ أيام راحة كافية بين الجلسات واهتم بالتعافي."
+      },
+      "workout_days": [
+        {
+          "day_number": 1,
+          "workout_id": "workout_get_strong_4d_1",
+          "title": {
+            "en": "Upper Strength A",
+            "ar": "Upper Strength A"
+          },
+          "duration_minutes": 50,
+          "exercises": [
+            {
+              "exercise_id": "ex_dumbbell_bench_press",
+              "sets": 4,
+              "reps": "4-6",
+              "rest_seconds": 180
+            },
+            {
+              "exercise_id": "ex_seated_cable_row",
+              "sets": 4,
+              "reps": "5-7",
+              "rest_seconds": 150
+            },
+            {
+              "exercise_id": "ex_overhead_press",
+              "sets": 3,
+              "reps": "5-7",
+              "rest_seconds": 150
+            }
+          ]
+        },
+        {
+          "day_number": 2,
+          "workout_id": "workout_get_strong_4d_2",
+          "title": {
+            "en": "Lower Strength A",
+            "ar": "Lower Strength A"
+          },
+          "duration_minutes": 50,
+          "exercises": [
+            {
+              "exercise_id": "ex_barbell_squat",
+              "sets": 4,
+              "reps": "4-6",
+              "rest_seconds": 180
+            },
+            {
+              "exercise_id": "ex_romanian_deadlift",
+              "sets": 3,
+              "reps": "5-7",
+              "rest_seconds": 180
+            },
+            {
+              "exercise_id": "ex_calf_raise",
+              "sets": 3,
+              "reps": "8-12",
+              "rest_seconds": 90
+            }
+          ]
+        },
+        {
+          "day_number": 3,
+          "workout_id": "workout_get_strong_4d_3",
+          "title": {
+            "en": "Upper Strength B",
+            "ar": "Upper Strength B"
+          },
+          "duration_minutes": 50,
+          "exercises": [
+            {
+              "exercise_id": "ex_lat_pulldown",
+              "sets": 4,
+              "reps": "5-8",
+              "rest_seconds": 150
+            },
+            {
+              "exercise_id": "ex_dumbbell_bench_press",
+              "sets": 3,
+              "reps": "5-7",
+              "rest_seconds": 180
+            },
+            {
+              "exercise_id": "ex_triceps_pushdown",
+              "sets": 3,
+              "reps": "8-10",
+              "rest_seconds": 90
+            }
+          ]
+        },
+        {
+          "day_number": 4,
+          "workout_id": "workout_get_strong_4d_4",
+          "title": {
+            "en": "Lower Strength B",
+            "ar": "Lower Strength B"
+          },
+          "duration_minutes": 50,
+          "exercises": [
+            {
+              "exercise_id": "ex_leg_press",
+              "sets": 4,
+              "reps": "6-8",
+              "rest_seconds": 150
+            },
+            {
+              "exercise_id": "ex_goblet_squat",
+              "sets": 3,
+              "reps": "6-8",
+              "rest_seconds": 120
+            },
+            {
+              "exercise_id": "ex_leg_curl",
+              "sets": 3,
+              "reps": "8-10",
+              "rest_seconds": 120
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "plan_id": "plan_get_strong_5d",
+      "goal_id": "get_strong",
+      "availability_days": 5,
+      "level": "intermediate",
+      "schedule_notes": {
+        "en": "Rest as needed between sessions and prioritize recovery.",
+        "ar": "خذ أيام راحة كافية بين الجلسات واهتم بالتعافي."
+      },
+      "workout_days": [
+        {
+          "day_number": 1,
+          "workout_id": "workout_get_strong_5d_1",
+          "title": {
+            "en": "Push Strength",
+            "ar": "Push Strength"
+          },
+          "duration_minutes": 50,
+          "exercises": [
+            {
+              "exercise_id": "ex_dumbbell_bench_press",
+              "sets": 5,
+              "reps": "3-5",
+              "rest_seconds": 210
+            },
+            {
+              "exercise_id": "ex_overhead_press",
+              "sets": 4,
+              "reps": "4-6",
+              "rest_seconds": 180
+            },
+            {
+              "exercise_id": "ex_triceps_pushdown",
+              "sets": 3,
+              "reps": "6-10",
+              "rest_seconds": 90
+            }
+          ]
+        },
+        {
+          "day_number": 2,
+          "workout_id": "workout_get_strong_5d_2",
+          "title": {
+            "en": "Pull Strength",
+            "ar": "Pull Strength"
+          },
+          "duration_minutes": 50,
+          "exercises": [
+            {
+              "exercise_id": "ex_lat_pulldown",
+              "sets": 4,
+              "reps": "5-7",
+              "rest_seconds": 150
+            },
+            {
+              "exercise_id": "ex_seated_cable_row",
+              "sets": 4,
+              "reps": "5-7",
+              "rest_seconds": 150
+            },
+            {
+              "exercise_id": "ex_dumbbell_curl",
+              "sets": 3,
+              "reps": "6-10",
+              "rest_seconds": 90
+            }
+          ]
+        },
+        {
+          "day_number": 3,
+          "workout_id": "workout_get_strong_5d_3",
+          "title": {
+            "en": "Leg Strength",
+            "ar": "Leg Strength"
+          },
+          "duration_minutes": 50,
+          "exercises": [
+            {
+              "exercise_id": "ex_barbell_squat",
+              "sets": 5,
+              "reps": "3-5",
+              "rest_seconds": 210
+            },
+            {
+              "exercise_id": "ex_leg_press",
+              "sets": 3,
+              "reps": "6-8",
+              "rest_seconds": 150
+            },
+            {
+              "exercise_id": "ex_calf_raise",
+              "sets": 3,
+              "reps": "8-12",
+              "rest_seconds": 90
+            }
+          ]
+        },
+        {
+          "day_number": 4,
+          "workout_id": "workout_get_strong_5d_4",
+          "title": {
+            "en": "Upper Power",
+            "ar": "Upper Power"
+          },
+          "duration_minutes": 50,
+          "exercises": [
+            {
+              "exercise_id": "ex_dumbbell_bench_press",
+              "sets": 4,
+              "reps": "4-6",
+              "rest_seconds": 180
+            },
+            {
+              "exercise_id": "ex_seated_cable_row",
+              "sets": 4,
+              "reps": "5-7",
+              "rest_seconds": 150
+            },
+            {
+              "exercise_id": "ex_overhead_press",
+              "sets": 3,
+              "reps": "5-7",
+              "rest_seconds": 150
+            }
+          ]
+        },
+        {
+          "day_number": 5,
+          "workout_id": "workout_get_strong_5d_5",
+          "title": {
+            "en": "Lower Power",
+            "ar": "Lower Power"
+          },
+          "duration_minutes": 50,
+          "exercises": [
+            {
+              "exercise_id": "ex_romanian_deadlift",
+              "sets": 4,
+              "reps": "5-7",
+              "rest_seconds": 180
+            },
+            {
+              "exercise_id": "ex_goblet_squat",
+              "sets": 3,
+              "reps": "6-8",
+              "rest_seconds": 120
+            },
+            {
+              "exercise_id": "ex_leg_curl",
+              "sets": 3,
+              "reps": "8-10",
+              "rest_seconds": 120
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "plan_id": "plan_general_fitness_2d",
+      "goal_id": "general_fitness",
+      "availability_days": 2,
+      "level": "intermediate",
+      "schedule_notes": {
+        "en": "Rest as needed between sessions and prioritize recovery.",
+        "ar": "خذ أيام راحة كافية بين الجلسات واهتم بالتعافي."
+      },
+      "workout_days": [
+        {
+          "day_number": 1,
+          "workout_id": "workout_general_fitness_2d_1",
+          "title": {
+            "en": "Full Body A",
+            "ar": "Full Body A"
+          },
+          "duration_minutes": 50,
+          "exercises": [
+            {
+              "exercise_id": "ex_goblet_squat",
+              "sets": 3,
+              "reps": "10-15",
+              "rest_seconds": 90
+            },
+            {
+              "exercise_id": "ex_psh",
+              "sets": 3,
+              "reps": "10-20",
+              "rest_seconds": 60
+            },
+            {
+              "exercise_id": "ex_seated_cable_row",
+              "sets": 3,
+              "reps": "10-15",
+              "rest_seconds": 75
+            },
+            {
+              "exercise_id": "ex_calf_raise",
+              "sets": 2,
+              "reps": "12-20",
+              "rest_seconds": 60
+            }
+          ]
+        },
+        {
+          "day_number": 2,
+          "workout_id": "workout_general_fitness_2d_2",
+          "title": {
+            "en": "Full Body B",
+            "ar": "Full Body B"
+          },
+          "duration_minutes": 50,
+          "exercises": [
+            {
+              "exercise_id": "ex_leg_press",
+              "sets": 3,
+              "reps": "10-15",
+              "rest_seconds": 90
+            },
+            {
+              "exercise_id": "ex_overhead_press",
+              "sets": 3,
+              "reps": "10-15",
+              "rest_seconds": 75
+            },
+            {
+              "exercise_id": "ex_lat_pulldown",
+              "sets": 3,
+              "reps": "10-15",
+              "rest_seconds": 75
+            },
+            {
+              "exercise_id": "ex_romanian_deadlift",
+              "sets": 2,
+              "reps": "10-12",
+              "rest_seconds": 90
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "plan_id": "plan_general_fitness_3d",
+      "goal_id": "general_fitness",
+      "availability_days": 3,
+      "level": "intermediate",
+      "schedule_notes": {
+        "en": "Rest as needed between sessions and prioritize recovery.",
+        "ar": "خذ أيام راحة كافية بين الجلسات واهتم بالتعافي."
+      },
+      "workout_days": [
+        {
+          "day_number": 1,
+          "workout_id": "workout_general_fitness_3d_1",
+          "title": {
+            "en": "Full Body A",
+            "ar": "Full Body A"
+          },
+          "duration_minutes": 50,
+          "exercises": [
+            {
+              "exercise_id": "ex_goblet_squat",
+              "sets": 3,
+              "reps": "10-15",
+              "rest_seconds": 90
+            },
+            {
+              "exercise_id": "ex_psh",
+              "sets": 3,
+              "reps": "10-20",
+              "rest_seconds": 60
+            },
+            {
+              "exercise_id": "ex_seated_cable_row",
+              "sets": 3,
+              "reps": "10-15",
+              "rest_seconds": 75
+            }
+          ]
+        },
+        {
+          "day_number": 2,
+          "workout_id": "workout_general_fitness_3d_2",
+          "title": {
+            "en": "Full Body B",
+            "ar": "Full Body B"
+          },
+          "duration_minutes": 50,
+          "exercises": [
+            {
+              "exercise_id": "ex_leg_press",
+              "sets": 3,
+              "reps": "10-15",
+              "rest_seconds": 90
+            },
+            {
+              "exercise_id": "ex_overhead_press",
+              "sets": 3,
+              "reps": "10-15",
+              "rest_seconds": 75
+            },
+            {
+              "exercise_id": "ex_lat_pulldown",
+              "sets": 3,
+              "reps": "10-15",
+              "rest_seconds": 75
+            }
+          ]
+        },
+        {
+          "day_number": 3,
+          "workout_id": "workout_general_fitness_3d_3",
+          "title": {
+            "en": "Full Body C",
+            "ar": "Full Body C"
+          },
+          "duration_minutes": 50,
+          "exercises": [
+            {
+              "exercise_id": "ex_romanian_deadlift",
+              "sets": 3,
+              "reps": "10-12",
+              "rest_seconds": 90
+            },
+            {
+              "exercise_id": "ex_dumbbell_bench_press",
+              "sets": 3,
+              "reps": "10-15",
+              "rest_seconds": 75
+            },
+            {
+              "exercise_id": "ex_lateral_raise",
+              "sets": 2,
+              "reps": "12-20",
+              "rest_seconds": 60
+            },
+            {
+              "exercise_id": "ex_leg_curl",
+              "sets": 2,
+              "reps": "12-15",
+              "rest_seconds": 75
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "plan_id": "plan_general_fitness_4d",
+      "goal_id": "general_fitness",
+      "availability_days": 4,
+      "level": "intermediate",
+      "schedule_notes": {
+        "en": "Rest as needed between sessions and prioritize recovery.",
+        "ar": "خذ أيام راحة كافية بين الجلسات واهتم بالتعافي."
+      },
+      "workout_days": [
+        {
+          "day_number": 1,
+          "workout_id": "workout_general_fitness_4d_1",
+          "title": {
+            "en": "Upper A",
+            "ar": "Upper A"
+          },
+          "duration_minutes": 50,
+          "exercises": [
+            {
+              "exercise_id": "ex_psh",
+              "sets": 3,
+              "reps": "10-20",
+              "rest_seconds": 60
+            },
+            {
+              "exercise_id": "ex_seated_cable_row",
+              "sets": 3,
+              "reps": "10-15",
+              "rest_seconds": 75
+            },
+            {
+              "exercise_id": "ex_overhead_press",
+              "sets": 3,
+              "reps": "10-15",
+              "rest_seconds": 75
+            },
+            {
+              "exercise_id": "ex_lateral_raise",
+              "sets": 2,
+              "reps": "12-20",
+              "rest_seconds": 60
+            }
+          ]
+        },
+        {
+          "day_number": 2,
+          "workout_id": "workout_general_fitness_4d_2",
+          "title": {
+            "en": "Lower A",
+            "ar": "Lower A"
+          },
+          "duration_minutes": 50,
+          "exercises": [
+            {
+              "exercise_id": "ex_goblet_squat",
+              "sets": 3,
+              "reps": "10-15",
+              "rest_seconds": 90
+            },
+            {
+              "exercise_id": "ex_romanian_deadlift",
+              "sets": 3,
+              "reps": "10-12",
+              "rest_seconds": 90
+            },
+            {
+              "exercise_id": "ex_calf_raise",
+              "sets": 3,
+              "reps": "12-20",
+              "rest_seconds": 60
+            }
+          ]
+        },
+        {
+          "day_number": 3,
+          "workout_id": "workout_general_fitness_4d_3",
+          "title": {
+            "en": "Upper B",
+            "ar": "Upper B"
+          },
+          "duration_minutes": 50,
+          "exercises": [
+            {
+              "exercise_id": "ex_dumbbell_bench_press",
+              "sets": 3,
+              "reps": "10-15",
+              "rest_seconds": 75
+            },
+            {
+              "exercise_id": "ex_lat_pulldown",
+              "sets": 3,
+              "reps": "10-15",
+              "rest_seconds": 75
+            },
+            {
+              "exercise_id": "ex_dumbbell_curl",
+              "sets": 2,
+              "reps": "12-15",
+              "rest_seconds": 60
+            },
+            {
+              "exercise_id": "ex_triceps_pushdown",
+              "sets": 2,
+              "reps": "12-15",
+              "rest_seconds": 60
+            }
+          ]
+        },
+        {
+          "day_number": 4,
+          "workout_id": "workout_general_fitness_4d_4",
+          "title": {
+            "en": "Lower B",
+            "ar": "Lower B"
+          },
+          "duration_minutes": 50,
+          "exercises": [
+            {
+              "exercise_id": "ex_leg_press",
+              "sets": 3,
+              "reps": "10-15",
+              "rest_seconds": 90
+            },
+            {
+              "exercise_id": "ex_leg_curl",
+              "sets": 3,
+              "reps": "12-15",
+              "rest_seconds": 75
+            },
+            {
+              "exercise_id": "ex_goblet_squat",
+              "sets": 2,
+              "reps": "12-15",
+              "rest_seconds": 75
+            },
+            {
+              "exercise_id": "ex_calf_raise",
+              "sets": 3,
+              "reps": "12-20",
+              "rest_seconds": 60
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "plan_id": "plan_general_fitness_5d",
+      "goal_id": "general_fitness",
+      "availability_days": 5,
+      "level": "intermediate",
+      "schedule_notes": {
+        "en": "Rest as needed between sessions and prioritize recovery.",
+        "ar": "خذ أيام راحة كافية بين الجلسات واهتم بالتعافي."
+      },
+      "workout_days": [
+        {
+          "day_number": 1,
+          "workout_id": "workout_general_fitness_5d_1",
+          "title": {
+            "en": "Upper Body",
+            "ar": "Upper Body"
+          },
+          "duration_minutes": 50,
+          "exercises": [
+            {
+              "exercise_id": "ex_psh",
+              "sets": 3,
+              "reps": "10-20",
+              "rest_seconds": 60
+            },
+            {
+              "exercise_id": "ex_seated_cable_row",
+              "sets": 3,
+              "reps": "10-15",
+              "rest_seconds": 75
+            },
+            {
+              "exercise_id": "ex_overhead_press",
+              "sets": 3,
+              "reps": "10-15",
+              "rest_seconds": 75
+            },
+            {
+              "exercise_id": "ex_lateral_raise",
+              "sets": 2,
+              "reps": "12-20",
+              "rest_seconds": 60
+            }
+          ]
+        },
+        {
+          "day_number": 2,
+          "workout_id": "workout_general_fitness_5d_2",
+          "title": {
+            "en": "Lower Body",
+            "ar": "Lower Body"
+          },
+          "duration_minutes": 50,
+          "exercises": [
+            {
+              "exercise_id": "ex_goblet_squat",
+              "sets": 3,
+              "reps": "10-15",
+              "rest_seconds": 90
+            },
+            {
+              "exercise_id": "ex_romanian_deadlift",
+              "sets": 3,
+              "reps": "10-12",
+              "rest_seconds": 90
+            },
+            {
+              "exercise_id": "ex_leg_curl",
+              "sets": 3,
+              "reps": "12-15",
+              "rest_seconds": 75
+            },
+            {
+              "exercise_id": "ex_calf_raise",
+              "sets": 3,
+              "reps": "12-20",
+              "rest_seconds": 60
+            }
+          ]
+        },
+        {
+          "day_number": 3,
+          "workout_id": "workout_general_fitness_5d_3",
+          "title": {
+            "en": "Full Body",
+            "ar": "Full Body"
+          },
+          "duration_minutes": 50,
+          "exercises": [
+            {
+              "exercise_id": "ex_leg_press",
+              "sets": 3,
+              "reps": "10-15",
+              "rest_seconds": 90
+            },
+            {
+              "exercise_id": "ex_dumbbell_bench_press",
+              "sets": 3,
+              "reps": "10-15",
+              "rest_seconds": 75
+            },
+            {
+              "exercise_id": "ex_lat_pulldown",
+              "sets": 3,
+              "reps": "10-15",
+              "rest_seconds": 75
+            }
+          ]
+        },
+        {
+          "day_number": 4,
+          "workout_id": "workout_general_fitness_5d_4",
+          "title": {
+            "en": "Upper & Arms",
+            "ar": "Upper & Arms"
+          },
+          "duration_minutes": 50,
+          "exercises": [
+            {
+              "exercise_id": "ex_dumbbell_bench_press",
+              "sets": 3,
+              "reps": "10-15",
+              "rest_seconds": 75
+            },
+            {
+              "exercise_id": "ex_seated_cable_row",
+              "sets": 3,
+              "reps": "10-15",
+              "rest_seconds": 75
+            },
+            {
+              "exercise_id": "ex_dumbbell_curl",
+              "sets": 2,
+              "reps": "12-15",
+              "rest_seconds": 60
+            },
+            {
+              "exercise_id": "ex_triceps_pushdown",
+              "sets": 2,
+              "reps": "12-15",
+              "rest_seconds": 60
+            }
+          ]
+        },
+        {
+          "day_number": 5,
+          "workout_id": "workout_general_fitness_5d_5",
+          "title": {
+            "en": "Conditioning Full Body",
+            "ar": "Conditioning Full Body"
+          },
+          "duration_minutes": 50,
+          "exercises": [
+            {
+              "exercise_id": "ex_goblet_squat",
+              "sets": 3,
+              "reps": "12-15",
+              "rest_seconds": 75
+            },
+            {
+              "exercise_id": "ex_psh",
+              "sets": 3,
+              "reps": "12-20",
+              "rest_seconds": 60
+            },
+            {
+              "exercise_id": "ex_lat_pulldown",
+              "sets": 3,
+              "reps": "10-15",
+              "rest_seconds": 75
+            },
+            {
+              "exercise_id": "ex_romanian_deadlift",
+              "sets": 2,
+              "reps": "10-12",
+              "rest_seconds": 90
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

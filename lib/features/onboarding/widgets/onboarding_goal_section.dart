@@ -1,8 +1,12 @@
 import 'package:fitflowapp/core/localization/localization_extension.dart';
+import 'package:fitflowapp/core/localization/language_cubit.dart';
 import 'package:fitflowapp/core/theme/app_styles.dart';
 import 'package:fitflowapp/features/onboarding/data/models/onboarding_goal.dart';
+import 'package:fitflowapp/features/onboarding/presentation/cubits/load_goals_cubit.dart';
+import 'package:fitflowapp/features/onboarding/presentation/cubits/load_goals_state.dart';
 import 'package:fitflowapp/features/onboarding/widgets/onboarding_goal_card.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 class OnboardingGoalSection extends StatefulWidget {
   const OnboardingGoalSection({super.key});
@@ -17,24 +21,6 @@ class _OnboardingGoalSectionState extends State<OnboardingGoalSection> {
   @override
   Widget build(BuildContext context) {
     final l = context.localize;
-    final goals = [
-      OnboardingGoal(
-        title: l.buildMuscle,
-        description: l.buildMuscleDesc,
-        icon: Icons.fitness_center,
-      ),
-      OnboardingGoal(
-        title: l.getStrong,
-        description: l.getStrongDesc,
-        icon: Icons.bolt,
-      ),
-      OnboardingGoal(
-        title: l.generalFitness,
-        description: l.generalFitnessDesc,
-        icon: Icons.self_improvement,
-      ),
-    ];
-
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       spacing: 0,
@@ -42,18 +28,40 @@ class _OnboardingGoalSectionState extends State<OnboardingGoalSection> {
         Text(l.selectYourGoal, style: AppStyles.onboardingTitle),
         Text(l.goalSubtitle, style: AppStyles.onboardingSubtitle),
         const SizedBox(height: 16),
-        Column(
-          spacing: 12,
-          children: List.generate(
-            goals.length,
-            (index) => GestureDetector(
-              onTap: () => setState(() => _selectedIndex = index),
-              child: OnboardingGoalCard(
-                goal: goals[index],
-                isSelected: _selectedIndex == index,
+        BlocBuilder<LoadGoalsCubit, LoadGoalsState>(
+          builder: (context, state) {
+            if (state is LoadGoalsInitial || state is LoadGoalsLoading) {
+              return const Center(child: CircularProgressIndicator());
+            }
+            if (state is LoadGoalsFailure) {
+              return Text(state.message, style: AppStyles.onboardingSubtitle);
+            }
+
+            final List<OnboardingGoal> goals = (state as LoadGoalsLoaded).goals;
+            final languageCode = context
+                .watch<LanguageCubit>()
+                .state
+                .languageCode;
+            return Column(
+              spacing: 12,
+              children: List.generate(
+                goals.length,
+                (index) => Semantics(
+                  button: true,
+                  label: goals[index].localizedTitle(languageCode),
+                  selected: _selectedIndex == index,
+                  child: GestureDetector(
+                    onTap: () => setState(() => _selectedIndex = index),
+                    child: OnboardingGoalCard(
+                      goal: goals[index],
+                      languageCode: languageCode,
+                      isSelected: _selectedIndex == index,
+                    ),
+                  ),
+                ),
               ),
-            ),
-          ),
+            );
+          },
         ),
       ],
     );
