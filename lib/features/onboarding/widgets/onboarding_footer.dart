@@ -4,7 +4,14 @@ import 'package:fitflowapp/core/theme/app_styles.dart';
 import 'package:flutter/material.dart';
 
 class OnboardingFooter extends StatelessWidget {
-  const OnboardingFooter({super.key});
+  const OnboardingFooter({
+    required this.onContinue,
+    this.isLoading = false,
+    super.key,
+  });
+
+  final VoidCallback? onContinue;
+  final bool isLoading;
 
   @override
   Widget build(BuildContext context) {
@@ -18,27 +25,35 @@ class OnboardingFooter extends StatelessWidget {
             width: double.infinity,
             height: 56,
             child: FilledButton(
-              onPressed: () {},
+              onPressed: isLoading ? null : onContinue,
               style: FilledButton.styleFrom(
                 backgroundColor: AppColors.primary,
                 shape: const StadiumBorder(),
                 elevation: 0,
               ),
-              child: Row(
-                mainAxisSize: MainAxisSize.min,
-                spacing: 8,
-                children: [
-                  Text(
-                    context.localize.continueButton,
-                    style: AppStyles.onboardingContinue,
-                  ),
-                  const Icon(
-                    Icons.arrow_forward,
-                    size: 16,
-                    color: AppColors.surface,
-                  ),
-                ],
-              ),
+              child: isLoading
+                  ? const SizedBox.square(
+                      dimension: 20,
+                      child: CircularProgressIndicator(
+                        strokeWidth: 2,
+                        color: AppColors.surface,
+                      ),
+                    )
+                  : Row(
+                      mainAxisSize: MainAxisSize.min,
+                      spacing: 8,
+                      children: [
+                        Text(
+                          context.localize.continueButton,
+                          style: AppStyles.onboardingContinue,
+                        ),
+                        const Icon(
+                          Icons.arrow_forward,
+                          size: 16,
+                          color: AppColors.surface,
+                        ),
+                      ],
+                    ),
             ),
           ),
           Text(

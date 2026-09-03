@@ -72,6 +72,8 @@ flutter:
 
   assets:
     - lib/data/fitflow_goals.json
+    - lib/data/fitflow_plans.json
+    - lib/data/fitflow_exercises.json
     - assets/images/app_logo.svg
     - assets/images/onboarding_image.png
     - assets/images/onbooarding_gradient.png

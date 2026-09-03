@@ -4,19 +4,27 @@ import 'package:fitflowapp/core/theme/app_styles.dart';
 import 'package:fitflowapp/features/onboarding/data/models/onboarding_goal.dart';
 import 'package:fitflowapp/features/onboarding/presentation/cubits/load_goals_cubit.dart';
 import 'package:fitflowapp/features/onboarding/presentation/cubits/load_goals_state.dart';
+import 'package:fitflowapp/features/onboarding/presentation/onboarding_screen.dart';
 import 'package:fitflowapp/features/onboarding/widgets/onboarding_goal_card.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 class OnboardingGoalSection extends StatefulWidget {
-  const OnboardingGoalSection({super.key});
+  const OnboardingGoalSection({
+    required this.input,
+    required this.onChanged,
+    super.key,
+  });
+
+  final OnboardingInputModel input;
+  final VoidCallback onChanged;
 
   @override
   State<OnboardingGoalSection> createState() => _OnboardingGoalSectionState();
 }
 
 class _OnboardingGoalSectionState extends State<OnboardingGoalSection> {
-  int _selectedIndex = 0;
+  List<OnboardingGoal>? _goals;
 
   @override
   Widget build(BuildContext context) {
@@ -28,42 +36,72 @@ class _OnboardingGoalSectionState extends State<OnboardingGoalSection> {
         Text(l.selectYourGoal, style: AppStyles.onboardingTitle),
         Text(l.goalSubtitle, style: AppStyles.onboardingSubtitle),
         const SizedBox(height: 16),
-        BlocBuilder<LoadGoalsCubit, LoadGoalsState>(
-          builder: (context, state) {
-            if (state is LoadGoalsInitial || state is LoadGoalsLoading) {
-              return const Center(child: CircularProgressIndicator());
-            }
-            if (state is LoadGoalsFailure) {
-              return Text(state.message, style: AppStyles.onboardingSubtitle);
-            }
-
-            final List<OnboardingGoal> goals = (state as LoadGoalsLoaded).goals;
-            final languageCode = context
-                .watch<LanguageCubit>()
-                .state
-                .languageCode;
-            return Column(
-              spacing: 12,
-              children: List.generate(
-                goals.length,
-                (index) => Semantics(
-                  button: true,
-                  label: goals[index].localizedTitle(languageCode),
-                  selected: _selectedIndex == index,
-                  child: GestureDetector(
-                    onTap: () => setState(() => _selectedIndex = index),
-                    child: OnboardingGoalCard(
-                      goal: goals[index],
-                      languageCode: languageCode,
-                      isSelected: _selectedIndex == index,
-                    ),
-                  ),
-                ),
-              ),
-            );
-          },
-        ),
+        if (_goals == null)
+          BlocListener<LoadGoalsCubit, LoadGoalsState>(
+            listener: (context, state) {
+              if (state is LoadGoalsLoaded) {
+                setState(() => _goals = state.goals);
+              }
+            },
+            child: Builder(
+              builder: (context) {
+                final state = context.read<LoadGoalsCubit>().state;
+                if (state is LoadGoalsFailure) {
+                  return Text(
+                    state.message,
+                    style: AppStyles.onboardingSubtitle,
+                  );
+                }
+                return const Center(child: CircularProgressIndicator());
+              },
+            ),
+          )
+        else
+          _GoalList(
+            goals: _goals!,
+            input: widget.input,
+            onChanged: widget.onChanged,
+          ),
       ],
+    );
+  }
+}
+
+class _GoalList extends StatelessWidget {
+  const _GoalList({
+    required this.goals,
+    required this.input,
+    required this.onChanged,
+  });
+
+  final List<OnboardingGoal> goals;
+  final OnboardingInputModel input;
+  final VoidCallback onChanged;
+
+  @override
+  Widget build(BuildContext context) {
+    final languageCode = context.watch<LanguageCubit>().state.languageCode;
+    return Column(
+      spacing: 12,
+      children: List.generate(
+        goals.length,
+        (index) => Semantics(
+          button: true,
+          label: goals[index].localizedTitle(languageCode),
+          selected: input.goalId == goals[index].id,
+          child: GestureDetector(
+            onTap: () {
+              input.selectGoal(goals[index].id);
+              onChanged();
+            },
+            child: OnboardingGoalCard(
+              goal: goals[index],
+              languageCode: languageCode,
+              isSelected: input.goalId == goals[index].id,
+            ),
+          ),
+        ),
+      ),
     );
   }
 }

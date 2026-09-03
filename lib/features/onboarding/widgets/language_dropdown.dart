@@ -29,10 +29,7 @@ class LanguageDropdown extends StatelessWidget {
             size: 20,
             color: AppColors.textSecondary,
           ),
-          style: const TextStyle(
-            color: AppColors.textSecondary,
-            fontSize: 14,
-          ),
+          style: const TextStyle(color: AppColors.textSecondary, fontSize: 14),
           items: [
             DropdownMenuItem(
               value: _locales[0],

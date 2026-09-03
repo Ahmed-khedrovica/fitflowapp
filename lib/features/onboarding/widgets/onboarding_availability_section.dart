@@ -1,23 +1,22 @@
 import 'package:fitflowapp/core/localization/localization_extension.dart';
 import 'package:fitflowapp/core/theme/app_colors.dart';
 import 'package:fitflowapp/core/theme/app_styles.dart';
+import 'package:fitflowapp/features/onboarding/presentation/onboarding_screen.dart';
 import 'package:fitflowapp/features/onboarding/widgets/day_chip.dart';
 import 'package:flutter/material.dart';
 
-class OnboardingAvailabilitySection extends StatefulWidget {
-  const OnboardingAvailabilitySection({super.key});
+class OnboardingAvailabilitySection extends StatelessWidget {
+  const OnboardingAvailabilitySection({
+    required this.input,
+    required this.onChanged,
+    super.key,
+  });
 
-  @override
-  State<OnboardingAvailabilitySection> createState() =>
-      _OnboardingAvailabilitySectionState();
-}
-
-class _OnboardingAvailabilitySectionState
-    extends State<OnboardingAvailabilitySection> {
   static const _imagePath = 'assets/images/onboarding_image.png';
   static const _gradientPath = 'assets/images/onbooarding_gradient.png';
 
-  int _selectedDays = 3;
+  final OnboardingInputModel input;
+  final VoidCallback onChanged;
 
   @override
   Widget build(BuildContext context) {
@@ -38,28 +37,28 @@ class _OnboardingAvailabilitySectionState
             children: [
               DayChip(
                 label: l.days2,
-                isSelected: _selectedDays == 2,
-                onTap: () => setState(() => _selectedDays = 2),
+                isSelected: input.availabilityDays == 2,
+                onTap: () => _selectDays(2),
               ),
               DayChip(
                 label: l.days3,
-                isSelected: _selectedDays == 3,
-                onTap: () => setState(() => _selectedDays = 3),
+                isSelected: input.availabilityDays == 3,
+                onTap: () => _selectDays(3),
               ),
               DayChip(
                 label: l.days4,
-                isSelected: _selectedDays == 4,
-                onTap: () => setState(() => _selectedDays = 4),
+                isSelected: input.availabilityDays == 4,
+                onTap: () => _selectDays(4),
               ),
               DayChip(
                 label: l.days5plus,
-                isSelected: _selectedDays == 5,
-                onTap: () => setState(() => _selectedDays = 5),
+                isSelected: input.availabilityDays == 5,
+                onTap: () => _selectDays(5),
               ),
             ],
           ),
         ),
-        if (_selectedDays == 3)
+        if (input.availabilityDays == 3)
           ClipRRect(
             borderRadius: BorderRadius.circular(12),
             child: SizedBox(
@@ -91,5 +90,10 @@ class _OnboardingAvailabilitySectionState
           ),
       ],
     );
+  }
+
+  void _selectDays(int days) {
+    input.selectAvailabilityDays(days);
+    onChanged();
   }
 }
